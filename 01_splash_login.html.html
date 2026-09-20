@@ -1,0 +1,172 @@
+<!-- PayDesk - Splash & Login Screens Mockup -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PayDesk - Splash & Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Tajawal:wght@500;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Cairo', sans-serif; }
+    .font-tajawal { font-family: 'Tajawal', sans-serif; }
+    @keyframes spin-custom { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    .animate-spin-custom { animation: spin-custom 1s linear infinite; }
+  </style>
+</head>
+<body class="bg-[#EAEDF2] min-h-screen text-[#2C3E50] p-4 md:p-10 flex flex-col items-center justify-center">
+
+  <header class="text-center mb-8 max-w-2xl">
+    <div class="inline-flex items-center gap-2 px-3 py-1 bg-white rounded-full border border-gray-200 text-xs text-[#5B2C8D] font-semibold mb-3 shadow-sm">
+      <span class="w-2 h-2 rounded-full bg-[#F39C12]"></span>
+      PayDesk Mobile UI Flow
+    </div>
+    <h1 class="text-2xl md:text-3xl font-bold font-tajawal text-[#5B2C8D] mb-1">واجهات تطبيق PayDesk</h1>
+    <p class="text-xs md:text-sm text-[#6B7280]">شاشة الترحيب والتحميل (Splash Screen) بجانب شاشة تسجيل الدخول الموثوق</p>
+  </header>
+
+  <main class="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 w-full max-w-5xl">
+
+    <!-- SPLASH SCREEN -->
+    <div class="flex flex-col items-center">
+      <span class="text-xs font-semibold text-[#6B7280] mb-2 tracking-wide font-tajawal">شاشة البداية (SPLASH SCREEN)</span>
+      
+      <div class="w-[360px] h-[800px] bg-white rounded-[40px] shadow-[0_20px_50px_rgba(0,0,0,0.12)] border-[8px] border-[#1F2937] overflow-hidden flex flex-col relative shrink-0">
+        
+        <div class="w-full h-8 px-6 pt-2 flex justify-between items-center text-xs text-gray-800 font-medium z-10 select-none">
+          <span>09:41</span>
+          <div class="flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L12 22l7.03-4.39C20.26 16.07 21 14.12 21 12c0-4.97-4.03-9-9-9z" opacity="0.2"/><path d="M18.36 5.64C16.74 4.01 14.49 3 12 3s-4.74 1.01-6.36 2.64L12 18l6.36-12.36z"/></svg>
+            <div class="w-5 h-2.5 border border-gray-700 rounded-sm p-0.5 flex items-center">
+              <div class="w-full h-full bg-gray-800 rounded-2xs"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-1 flex flex-col justify-between items-center py-6 px-6 text-center select-none">
+          <div class="h-[22%] w-full"></div>
+
+          <div class="flex flex-col items-center justify-center w-full">
+            <div class="w-[40%] max-w-[150px] aspect-square flex items-center justify-center bg-gradient-to-br from-[#5B2C8D] to-[#7B4C9D] rounded-3xl shadow-lg">
+              <span class="text-white font-tajawal font-black text-7xl">P</span>
+            </div>
+            <p class="font-cairo text-[14px] text-[#2C3E50] mt-6">كل مستحقاتك في مكان واحد</p>
+          </div>
+
+          <div class="h-[25%] w-full flex flex-col items-center justify-end pb-5">
+            <div class="mb-14">
+              <div class="w-6 h-6 rounded-full border-2 border-[#5B2C8D]/20 border-t-[#5B2C8D] animate-spin-custom"></div>
+            </div>
+            <div class="font-cairo text-[11px] text-[#9CA3AF]">v1.0.0</div>
+          </div>
+        </div>
+
+        <div class="absolute bottom-1.5 left-1/2 -translate-x-1/2 w-32 h-1 bg-gray-300 rounded-full"></div>
+      </div>
+    </div>
+
+    <!-- LOGIN SCREEN -->
+    <div class="flex flex-col items-center">
+      <span class="text-xs font-semibold text-[#6B7280] mb-2 tracking-wide font-tajawal">شاشة تسجيل الدخول (LOGIN SCREEN)</span>
+      
+      <div class="w-[360px] h-[800px] bg-[#F8F9FA] rounded-[40px] shadow-[0_20px_50px_rgba(0,0,0,0.12)] border-[8px] border-[#1F2937] overflow-hidden flex flex-col relative shrink-0">
+        
+        <div class="w-full h-8 px-6 pt-2 flex justify-between items-center text-xs text-gray-800 font-medium z-10 select-none bg-white">
+          <span>09:41</span>
+          <div class="flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M18.36 5.64C16.74 4.01 14.49 3 12 3s-4.74 1.01-6.36 2.64L12 18l6.36-12.36z"/></svg>
+            <div class="w-5 h-2.5 border border-gray-700 rounded-sm p-0.5 flex items-center">
+              <div class="w-full h-full bg-gray-800 rounded-2xs"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-1 flex flex-col justify-between overflow-y-auto select-none">
+          
+          <div class="bg-white pt-8 pb-4 px-6 flex flex-col items-center shadow-[0_1px_3px_rgba(0,0,0,0.03)]">
+            <div class="w-[72px] aspect-square flex items-center justify-center bg-gradient-to-br from-[#5B2C8D] to-[#7B4C9D] rounded-2xl shadow-md">
+              <span class="text-white font-tajawal font-black text-4xl">P</span>
+            </div>
+          </div>
+
+          <div class="px-6 flex-1 flex flex-col justify-between pt-6 pb-4">
+            
+            <div>
+              <div class="text-center mb-6">
+                <h2 class="font-tajawal font-bold text-[24px] text-[#5B2C8D] leading-tight">أهلاً بك مجدداً</h2>
+                <p class="font-cairo text-[14px] text-[#6B7280] mt-2">سجّل دخولك للمتابعة</p>
+              </div>
+
+              <div class="w-full h-[48px] bg-[#F3F4F6] p-1 rounded-[24px] flex items-center mb-8">
+                <button class="flex-1 h-full rounded-[24px] bg-[#5B2C8D] text-white font-cairo text-[14px] font-medium flex items-center justify-center gap-2 shadow-sm">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4"/>
+                    <path d="M14 13.12c0 2.38 0 6.38-1 8.88"/>
+                    <path d="M17.29 21.02c.12-.6.43-2.3.5-3.02"/>
+                    <path d="M2 12a10 10 0 0 1 18-6"/>
+                  </svg>
+                  <span>بصمة الإصبع</span>
+                </button>
+                
+                <button class="flex-1 h-full rounded-[24px] text-[#5B2C8D] font-cairo text-[14px] font-medium flex items-center justify-center gap-2">
+                  <svg class="w-4 h-4 opacity-70" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                  </svg>
+                  <span>رمز PIN</span>
+                </button>
+              </div>
+
+              <div class="flex flex-col items-center justify-center my-2">
+                <div class="relative flex items-center justify-center">
+                  <div class="absolute w-[150px] h-[150px] rounded-full border border-[#5B2C8D]/15 animate-pulse"></div>
+                  <div class="absolute w-[134px] h-[134px] rounded-full bg-[#5B2C8D]/5"></div>
+                  
+                  <button class="w-[120px] h-[120px] rounded-full bg-gradient-to-br from-[#5B2C8D] to-[#7B4C9D] flex items-center justify-center text-white shadow-[0_8px_24px_rgba(91,44,141,0.25)]">
+                    <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <path d="M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4"/>
+                      <path d="M14 13.12c0 2.38 0 6.38-1 8.88"/>
+                      <path d="M17.29 21.02c.12-.6.43-2.3.5-3.02"/>
+                      <path d="M2 12a10 10 0 0 1 18-6"/>
+                    </svg>
+                  </button>
+                </div>
+
+                <p class="font-cairo text-[14px] text-[#2C3E50] mt-6 font-semibold">اضغط للمصادقة بالبصمة</p>
+                <p class="font-cairo text-[12px] text-[#9CA3AF] mt-1.5">يدعم Face ID أو بصمة الإصبع المسجلة</p>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center pt-6 space-y-4">
+              <div class="flex items-center gap-1.5 font-cairo text-[13px]">
+                <span class="text-[#6B7280]">ليس لديك حساب؟</span>
+                <a href="#" class="text-[#F39C12] font-medium underline">تسجيل جديد</a>
+              </div>
+
+              <div class="flex items-center gap-1.5 text-[#9CA3AF] font-cairo text-[11px] bg-white/80 px-3 py-1 rounded-full border border-gray-100">
+                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="11" width="18" height="11" rx="2"/>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                </svg>
+                <span>اتصال مشفر آمن 256-bit</span>
+              </div>
+
+              <div class="font-cairo text-[10px] text-[#9CA3AF] pb-2">v1.0.0</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="absolute bottom-1.5 left-1/2 -translate-x-1/2 w-32 h-1 bg-gray-300 rounded-full"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="mt-8 text-center text-xs text-[#6B7280]">
+    <span>نظام PayDesk لإدارة رواتب الموظفين • 360×800 • RTL</span>
+  </footer>
+
+</body>
+</html>
