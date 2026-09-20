@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>PayDesk — Prototype</title>
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: #F1F5F9;
+      padding: 40px;
+    }
+    h1 { color: #5B2C8D; text-align: center; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      gap: 20px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .card h3 { color: #5B2C8D; margin: 0 0 10px 0; }
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background: #5B2C8D;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>PayDesk — Prototype</h1>
+  <div class="grid">
+    <div class="card">
+      <h3>1. Splash & Login</h3>
+      <a href="01_splash_login.html">عرض الشاشة</a>
+    </div>
+    <div class="card">
+      <h3>2. Registration</h3>
+      <a href="02_registration.html">عرض الشاشة</a>
+    </div>
+    <!-- ... باقي الشاشات -->
+  </div>
+</body>
+</html>
