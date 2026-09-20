@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><title>PayDesk - Leader Team</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Tajawal:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Cairo',sans-serif;background:#ECEEF2;padding:20px}
+.font-heading{font-family:'Tajawal',sans-serif}
+.phone{width:360px;height:780px;background:#F8F9FA;border-radius:42px;border:9px solid #1E293B;overflow:hidden;display:flex;flex-direction:column;position:relative;box-shadow:0 25px 50px rgba(0,0,0,0.2)}
+.no-scrollbar::-webkit-scrollbar{display:none}
+</style>
+</head>
+<body class="min-h-screen flex flex-col items-center">
+<header class="text-center max-w-4xl mb-8">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-100 text-[#5B2C8D] text-xs font-bold font-heading mb-3 border border-purple-200">
+<span class="w-2 h-2 rounded-full bg-[#F39C12] animate-pulse"></span>واجهات قائد الفريق • PayDesk Leader Flow</div>
+<h1 class="text-2xl md:text-4xl font-extrabold font-heading text-[#2C3E50]">شاشات إدارة ومتابعة الفريق لقائد العمل</h1>
+<p class="text-sm text-[#6B7280] mt-2">واجهة الليدر أحمد • فرع علي وسيف • 8 أعضاء • Android 360×800 RTL</p>
+</header>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 w-full max-w-[1240px]">
+<!-- Screen 1: Team List -->
+<div class="flex flex-col items-center">
+<div class="flex items-center gap-2 mb-3"><span class="w-2.5 h-2.5 rounded-full bg-[#5B2C8D]"></span><span class="font-heading font-bold text-sm">1. قائمة الفريق</span></div>
+<div class="phone">
+<div class="h-6 bg-white px-6 pt-1.5 flex justify-between items-center text-[10px] text-gray-500 font-semibold shrink-0">
+<span>09:41</span><div class="w-20 h-4 bg-[#1E293B] rounded-full mx-auto -mt-1"></div><span>📶 📡 🔋</span></div>
+<div class="bg-white px-4 py-3 border-b border-[#E5E7EB] flex items-center justify-between shrink-0 shadow-sm">
+<div class="flex items-center gap-3">
+<div class="relative">
+<div class="w-12 h-12 rounded-full bg-gradient-to-tr from-[#5B2C8D] to-[#8E44AD] flex items-center justify-center text-white font-heading font-bold text-base">أح</div>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 bg-[#27AE60] border-2 border-white rounded-full"></span></div>
+<div><div class="text-sm font-bold font-heading">أهلاً، أحمد</div>
+<div class="text-[11px] text-[#6B7280]">ليدر فريق المبيعات</div></div></div>
+<div class="relative p-2 rounded-xl bg-gray-50 border border-gray-100 text-[#5B2C8D]">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
+<span class="absolute top-1.5 right-1.5 w-2.5 h-2.5 bg-[#F39C12] border-2 border-white rounded-full"></span></div></div>
+<div class="flex-1 overflow-y-auto no-scrollbar p-3.5 space-y-3.5 pb-24">
+<div class="grid grid-cols-3 gap-2">
+<div class="bg-white p-2.5 rounded-xl border border-[#E5E7EB] text-center">
+<div class="w-7 h-7 rounded-lg bg-[#5B2C8D]/10 text-[#5B2C8D] flex items-center justify-center mx-auto mb-1">👥</div>
+<div class="text-lg font-extrabold font-heading">8</div>
+<div class="text-[10px] text-[#6B7280]">أعضاء فريقي</div></div>
+<div class="bg-white p-2.5 rounded-xl border border-red-100 text-center">
+<div class="w-7 h-7 rounded-lg bg-red-50 text-[#E74C3C] flex items-center justify-center mx-auto mb-1">✕</div>
+<div class="text-lg font-extrabold font-heading text-[#E74C3C]">1</div>
+<div class="text-[10px] text-[#6B7280]">غائب اليوم</div></div>
+<div class="bg-white p-2.5 rounded-xl border border-amber-100 text-center">
+<div class="w-7 h-7 rounded-lg bg-[#F39C12]/10 text-[#F39C12] flex items-center justify-center mx-auto mb-1">⏱</div>
+<div class="text-lg font-extrabold font-heading text-[#F39C12]">2</div>
+<div class="text-[10px] text-[#6B7280]">طلبات معلقة</div></div></div>
+<div class="flex items-center gap-2">
+<div class="flex-1 bg-white rounded-xl border border-[#E5E7EB] px-3 py-2 flex items-center gap-2">
+<svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+<input type="text" placeholder="ابحث عن عضو..." class="w-full text-xs bg-transparent outline-none" readonly></div>
+<button class="w-9 h-9 rounded-xl bg-white border border-[#E5E7EB] flex items-center justify-center text-[#5B2C8D]">⚙️</button></div>
+<div class="flex items-center justify-between pt-1"><span class="text-xs font-bold font-heading">أعضاء فريقي (8)</span><span class="text-[11px] text-[#5B2C8D] font-semibold">20 أكتوبر 2026</span></div>
+<div class="space-y-2">
+<div class="bg-white rounded-xl p-2.5 border-2 border-[#5B2C8D] flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-purple-100 text-[#5B2C8D] flex items-center justify-center font-heading font-bold text-xs">م أ</div>
+<div><div class="text-xs font-bold font-heading flex items-center gap-1.5">محمد أحمد<span class="text-[9px] px-1.5 rounded bg-purple-50 text-[#5B2C8D] font-mono">TX12345</span></div>
+<div class="text-[10px] text-[#6B7280]">Sales Representative</div></div></div>
+<div class="flex items-center gap-2"><span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-50 text-[#27AE60] border border-emerald-200">حاضر</span><span class="text-gray-400">‹</span></div></div>
+<div class="bg-white rounded-xl p-2.5 border border-[#E5E7EB] flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-amber-100 text-[#F39C12] flex items-center justify-center font-heading font-bold text-xs">س ع</div>
+<div><div class="text-xs font-bold font-heading">سارة علي</div><div class="text-[10px] text-[#6B7280]">Sales Rep</div></div></div>
+<div class="flex items-center gap-2"><span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-50 text-[#F39C12] border border-amber-200">في إجازة</span><span class="text-gray-400">‹</span></div></div>
+<div class="bg-white rounded-xl p-2.5 border border-[#E5E7EB] flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-heading font-bold text-xs">خ ح</div>
+<div><div class="text-xs font-bold font-heading">خالد حسن</div><div class="text-[10px] text-[#6B7280]">Key Account</div></div></div>
+<div class="flex items-center gap-2"><span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-50 text-[#27AE60] border border-emerald-200">حاضر</span><span class="text-gray-400">‹</span></div></div>
+<div class="bg-white rounded-xl p-2.5 border border-red-200 bg-red-50/20 flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-red-100 text-[#E74C3C] flex items-center justify-center font-heading font-bold text-xs">ف ي</div>
+<div><div class="text-xs font-bold font-heading">فاطمة يوسف</div><div class="text-[10px] text-[#6B7280]">Indoor Sales</div></div></div>
+<div class="flex items-center gap-2"><span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-red-50 text-[#E74C3C] border border-red-200">غائب</span><span class="text-gray-400">‹</span></div></div>
+<div class="bg-white rounded-xl p-2.5 border border-[#E5E7EB] flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-purple-50 text-[#5B2C8D] flex items-center justify-center font-heading font-bold text-xs">ع م</div>
+<div><div class="text-xs font-bold font-heading">عمر محمود</div><div class="text-[10px] text-[#6B7280]">Field Sales</div></div></div>
+<div class="flex items-center gap-2"><span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-50 text-[#27AE60] border border-emerald-200">حاضر</span><span class="text-gray-400">‹</span></div></div>
+</div></div>
+<div class="absolute bottom-5 left-4 z-20">
+<button class="bg-gradient-to-r from-[#5B2C8D] to-[#7B4C9D] text-white px-4 py-3 rounded-full shadow-lg flex items-center gap-2 font-heading font-bold text-xs">
+<span>📝 تسجيل غياب لعضو</span></button></div>
+</div>
+</div>
+<!-- Screen 2: Member Details -->
+<div class="flex flex-col items-center">
+<div class="flex items-center gap-2 mb-3"><span class="w-2.5 h-2.5 rounded-full bg-[#F39C12]"></span><span class="font-heading font-bold text-sm">2. تفاصيل العضو</span></div>
+<div class="phone">
+<div class="h-6 bg-white px-6 pt-1.5 flex justify-between items-center text-[10px] text-gray-500 shrink-0">
+<span>09:41</span><div class="w-20 h-4 bg-[#1E293B] rounded-full mx-auto -mt-1"></div><span>📶 📡 🔋</span></div>
+<div class="bg-white px-4 py-3 border-b border-[#E5E7EB] flex items-center justify-between shrink-0">
+<div class="flex items-center gap-2">
+<button class="w-8 h-8 rounded-lg bg-gray-50 flex items-center justify-center border border-gray-200">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></button>
+<span class="text-sm font-bold font-heading">تفاصيل العضو</span></div>
+<span class="text-[11px] text-[#6B7280] font-mono bg-gray-100 px-2 py-0.5 rounded">TX12345</span></div>
+<div class="flex-1 overflow-y-auto no-scrollbar p-3.5 space-y-3.5">
+<div class="bg-white rounded-2xl p-4 border border-[#E5E7EB] text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 left-0 h-16 bg-gradient-to-r from-[#5B2C8D]/15 to-transparent"></div>
+<div class="relative z-10">
+<div class="w-20 h-20 mx-auto rounded-full bg-gradient-to-tr from-[#5B2C8D] to-[#7B4C9D] text-white font-heading font-extrabold text-2xl flex items-center justify-center border-4 border-white mb-2">م أ</div>
+<div class="text-base font-extrabold font-heading">محمد أحمد</div>
+<div class="text-xs text-[#6B7280] mt-0.5">Sales Representative • فرع علي وسيف</div>
+<div class="mt-2.5 flex items-center justify-center gap-2">
+<span class="text-[11px] font-bold px-3 py-0.5 rounded-full bg-emerald-50 text-[#27AE60] border border-emerald-200">● حاضر اليوم</span>
+<span class="text-[11px] bg-gray-100 px-2.5 py-0.5 rounded-full">فريق المبيعات</span></div></div></div>
+<div><div class="text-xs font-bold font-heading mb-2">إجراءات سريعة</div>
+<div class="grid grid-cols-3 gap-2">
+<button class="bg-[#5B2C8D] text-white p-2.5 rounded-xl text-center">
+<div class="text-base mb-1">📝</div><div class="text-[11px] font-bold font-heading">تسجيل غياب</div>
+<div class="text-[9px] text-white/75 mt-0.5">إجازة / غياب</div></button>
+<button class="bg-white border border-[#E5E7EB] p-2.5 rounded-xl text-center">
+<div class="text-base mb-1">🕘</div><div class="text-[11px] font-bold font-heading">تسجيل إذن</div>
+<div class="text-[9px] text-[#6B7280] mt-0.5">تأخير</div></button>
+<button class="bg-white border border-[#E5E7EB] p-2.5 rounded-xl text-center">
+<div class="text-base mb-1">💰</div><div class="text-[11px] font-bold font-heading">تسجيل خصم</div>
+<div class="text-[9px] text-[#6B7280] mt-0.5">أيام</div></button>
+</div></div>
+<div class="bg-white rounded-xl p-3 border border-[#E5E7EB]">
+<div class="flex items-center justify-between pb-2 border-b border-gray-100 mb-2.5">
+<span class="text-xs font-bold font-heading">سجل الحضور • أكتوبر</span>
+<span class="text-[10px] text-[#5B2C8D] font-bold bg-purple-50 px-2 py-0.5 rounded">22 يوم حضور</span></div>
+<div class="grid grid-cols-3 gap-2 text-center">
+<div class="bg-gray-50 p-2 rounded-lg"><div class="text-[10px] text-[#6B7280]">غيابات بإذن</div><div class="text-sm font-bold font-heading mt-0.5">1 يوم</div></div>
+<div class="bg-gray-50 p-2 rounded-lg"><div class="text-[10px] text-[#6B7280]">أذونات</div><div class="text-sm font-bold font-heading text-[#F39C12] mt-0.5">3</div></div>
+<div class="bg-gray-50 p-2 rounded-lg"><div class="text-[10px] text-[#6B7280]">خصومات</div><div class="text-sm font-bold font-heading text-[#E74C3C] mt-0.5">1</div></div></div></div>
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<span class="text-xs font-bold font-heading">آخر السجلات</span>
+<span class="text-[10px] text-[#6B7280]">آخر 30 يوم</span></div>
+<div class="bg-white p-2.5 rounded-xl border border-[#E5E7EB] flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-lg bg-amber-50 text-[#F39C12] flex items-center justify-center text-xs">⚠️</div>
+<div><div class="text-xs font-bold">غياب بإذن</div><div class="text-[10px] text-[#6B7280]">15 أكتوبر — يوم</div></div></div>
+<span class="text-[9px] px-2 py-0.5 rounded bg-emerald-50 text-[#27AE60] font-bold">معتمد</span></div>
+<div class="bg-white p-2.5 rounded-xl border border-[#E5E7EB] flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-lg bg-purple-50 text-[#5B2C8D] flex items-center justify-center text-xs">⏰</div>
+<div><div class="text-xs font-bold">إذن تأخير</div><div class="text-[10px] text-[#6B7280]">12 أكتوبر — ساعة</div></div></div>
+<span class="text-[9px] px-2 py-0.5 rounded bg-emerald-50 text-[#27AE60] font-bold">معتمد</span></div>
+<div class="bg-white p-2.5 rounded-xl border border-red-100 flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-lg bg-red-50 text-[#E74C3C] flex items-center justify-center text-xs">⛔</div>
+<div><div class="text-xs font-bold">خصم يوم غياب</div><div class="text-[10px] text-[#6B7280]">8 أكتوبر — بدون إذن</div></div></div>
+<span class="text-[9px] px-2 py-0.5 rounded bg-red-50 text-[#E74C3C] font-bold">مسجل</span></div>
+</div></div>
+</div>
+</div>
+<!-- Screen 3: Record Absence -->
+<div class="flex flex-col items-center">
+<div class="flex items-center gap-2 mb-3"><span class="w-2.5 h-2.5 rounded-full bg-[#27AE60]"></span><span class="font-heading font-bold text-sm">3. تسجيل غياب</span></div>
+<div class="phone">
+<div class="h-6 bg-white px-6 pt-1.5 flex justify-between items-center text-[10px] text-gray-500 shrink-0">
+<span>09:41</span><div class="w-20 h-4 bg-[#1E293B] rounded-full mx-auto -mt-1"></div><span>📶 📡 🔋</span></div>
+<div class="bg-white px-4 py-3 border-b border-[#E5E7EB] flex items-center justify-between shrink-0">
+<div class="flex items-center gap-2">
+<button class="w-8 h-8 rounded-lg bg-gray-50 flex items-center justify-center border border-gray-200">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></button>
+<span class="text-sm font-bold font-heading">تسجيل غياب</span></div>
+<span class="text-[11px] text-[#5B2C8D] font-bold">بواسطة الليدر</span></div>
+<div class="flex-1 overflow-y-auto no-scrollbar p-3.5 space-y-3.5 pb-24">
+<div class="bg-white rounded-xl p-3 border border-[#E5E7EB] flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-11 h-11 rounded-full bg-purple-100 text-[#5B2C8D] font-heading font-bold text-sm flex items-center justify-center">م أ</div>
+<div><div class="text-xs font-bold font-heading flex items-center gap-1.5">محمد أحمد<span class="text-[9px] text-[#6B7280]">(عضو بفريقك)</span></div>
+<div class="text-[10px] text-[#6B7280]">Sales Rep • TX12345</div></div></div>
+<span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">قراءة فقط</span></div>
+<div><div class="text-xs font-bold font-heading mb-2 flex items-center justify-between">
+<span>نوع الغياب</span><span class="text-[10px] text-[#5B2C8D] font-bold">محدد من الليدر</span></div>
+<div class="space-y-2">
+<label class="bg-white rounded-xl p-3 border-2 border-[#5B2C8D] flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-full border-2 border-[#5B2C8D] flex items-center justify-center">
+<div class="w-2.5 h-2.5 rounded-full bg-[#5B2C8D]"></div></div>
+<div><div class="text-xs font-bold font-heading">بإذن مسبق</div>
+<div class="text-[10px] text-[#6B7280]">يُحسب كإجازة عادية</div></div></div>
+<span class="text-xs">📅</span></label>
+<label class="bg-white rounded-xl p-3 border border-[#E5E7EB] flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-full border-2 border-gray-300"></div>
+<div><div class="text-xs font-bold font-heading">بدون إذن</div>
+<div class="text-[10px] text-[#E74C3C]">يُحتسب ضمن الخصومات</div></div></div>
+<span class="text-xs">⛔</span></label>
+<label class="bg-white rounded-xl p-3 border border-[#E5E7EB] flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-full border-2 border-gray-300"></div>
+<div><div class="text-xs font-bold font-heading">إجازة ممتدة</div>
+<div class="text-[10px] text-[#6B7280]">فترة محددة</div></div></div>
+<span class="text-xs">📆</span></label>
+</div></div>
+<div><div class="text-xs font-bold font-heading mb-1.5">تاريخ الغياب</div>
+<div class="bg-white rounded-xl border border-[#E5E7EB] p-2.5 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-purple-50 text-[#5B2C8D] flex items-center justify-center">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div>
+<div><div class="text-[10px] text-[#6B7280]">تاريخ اليوم</div>
+<div class="text-xs font-bold">20 أكتوبر 2026</div></div></div>
+<span class="text-[11px] text-[#5B2C8D] font-bold">تغيير</span></div></div>
+<div><div class="text-xs font-bold font-heading mb-1.5 flex justify-between">
+<span>سبب الغياب</span><span class="text-[10px] text-gray-400">إلزامي</span></div>
+<div class="bg-white rounded-xl border border-[#E5E7EB] p-2.5">
+<textarea rows="3" class="w-full text-xs outline-none resize-none bg-transparent" placeholder="اذكر سبب الغياب..."></textarea>
+<div class="flex justify-between text-[10px] text-gray-400 pt-1 border-t border-gray-100">
+<span>سيتم إرسال إشعار للموظف</span><span>0 / 200</span></div></div></div>
+<div class="bg-amber-50 border border-amber-200 rounded-xl p-2.5 flex items-start gap-2">
+<span class="text-xs mt-0.5">ℹ️</span>
+<div class="text-[10px] leading-snug">يتم تسجيل البيانات مباشرة في ملف الموظف الشهري.</div></div>
+</div>
+<div class="absolute bottom-0 inset-x-0 p-3.5 bg-white border-t border-[#E5E7EB] z-20">
+<button class="w-full bg-[#5B2C8D] text-white py-3.5 rounded-xl font-heading font-bold text-xs flex items-center justify-center gap-2">
+<span>💾 حفظ الغياب واعتماد السجل</span></button></div>
+</div>
+</div>
+</div>
+<footer class="mt-8 text-center text-xs text-gray-500">PayDesk • بوابة قائد الفريق • Android 360×800 RTL</footer>
+</body>
+</html>

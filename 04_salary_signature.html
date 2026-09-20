@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><title>PayDesk - Salary & Signature</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Tajawal:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Cairo',sans-serif;background:#F0F2F5;padding:20px}
+.font-heading{font-family:'Tajawal',sans-serif}
+.phone-frame{width:360px;height:780px;border-radius:46px;border:11px solid #1E293B;background:#fff;overflow:hidden;display:flex;flex-direction:column;position:relative}
+.no-scrollbar::-webkit-scrollbar{display:none}
+.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}
+</style>
+</head>
+<body>
+<header class="max-w-7xl mx-auto text-center mb-10">
+<div class="inline-flex items-center gap-2 bg-purple-50 border border-purple-200 px-4 py-1.5 rounded-full mb-3">
+<span class="w-2.5 h-2.5 rounded-full bg-[#F39C12] animate-pulse"></span>
+<span class="text-xs font-bold text-[#5B2C8D]">PayDesk Mobile UI Flow</span>
+</div>
+<h1 class="text-2xl md:text-4xl font-extrabold text-[#231238] font-heading">واجهات تفاصيل الراتب والتوقيع الإلكتروني والإيصال</h1>
+<p class="text-sm text-[#6B7280] mt-2">نظام تأكيد استلام الراتب وتوقيع الإيصال الرقمي (Android 360×800 RTL)</p>
+</header>
+<main class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 justify-items-center">
+<!-- Screen 1: Salary Details -->
+<section class="flex flex-col items-center max-w-[360px]">
+<div class="mb-4 flex items-center gap-2 bg-white px-4 py-1.5 rounded-full border border-purple-100 text-xs font-bold text-[#5B2C8D]">
+<span class="w-2 h-2 rounded-full bg-[#5B2C8D]"></span>1. تفاصيل المرتب
+</div>
+<div class="phone-frame">
+<div class="h-9 px-6 pt-2 flex justify-between items-center text-[11px] font-semibold text-gray-700 bg-white"><span>09:41</span><span>📶 📡 🔋</span></div>
+<div class="px-4 py-2.5 flex items-center justify-between border-b border-gray-100 bg-white">
+<button class="p-1.5 text-[#2C3E50]"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+<h2 class="text-base font-bold font-heading">تفاصيل المرتب</h2>
+<button class="p-1.5 text-gray-500"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg></button>
+</div>
+<div class="flex-1 overflow-y-auto px-4 py-3 bg-[#F9FAFB] space-y-3 no-scrollbar pb-20">
+<div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-1 text-xs font-semibold">
+<span class="bg-[#5B2C8D] text-white px-3.5 py-1.5 rounded-full">أكتوبر 2026</span>
+<span class="bg-white text-gray-600 border border-gray-200 px-3 py-1.5 rounded-full">سبتمبر 2026</span>
+<span class="bg-white text-gray-400 border border-gray-200 px-3 py-1.5 rounded-full">أغسطس 2026</span>
+</div>
+<div class="bg-gradient-to-br from-[#5B2C8D] to-[#7B4C9D] rounded-2xl p-4 text-white shadow-md relative overflow-hidden">
+<div class="absolute -left-6 -bottom-6 w-24 h-24 rounded-full bg-white/10 blur-xl"></div>
+<div class="flex items-center justify-between text-xs mb-1">
+<span class="text-white/80 font-medium">صافي المرتب المستحق</span>
+<span class="bg-white/20 text-[11px] px-2.5 py-0.5 rounded-full">✓ جاهز للتوقيع</span>
+</div>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="text-3xl font-extrabold font-heading">5,000</span>
+<span class="text-xs text-purple-200">جنيه مصري</span>
+</div>
+</div>
+<div class="bg-white rounded-xl p-3 border border-gray-100 text-xs space-y-1.5">
+<div class="flex justify-between text-gray-500"><span>الاسم:</span><span class="font-bold text-[#2C3E50]">محمد أحمد</span></div>
+<div class="flex justify-between text-gray-500 border-t border-gray-50 pt-1.5"><span>الوظيفة:</span><span class="font-semibold text-[#2C3E50]">مندوب مبيعات</span></div>
+<div class="flex justify-between text-gray-500 border-t border-gray-50 pt-1.5"><span>الفرع:</span><span class="font-semibold text-[#5B2C8D]">فرع علي وسيف</span></div>
+</div>
+<div class="bg-white rounded-xl p-3 border border-gray-100">
+<h3 class="text-xs font-bold mb-2.5">💰 الراتب الأساسي والبدلات</h3>
+<div class="space-y-2 text-xs">
+<div class="flex justify-between text-gray-600"><span>الراتب الأساسي</span><span class="font-bold">4,500 ج.م</span></div>
+<div class="flex justify-between text-gray-600"><span>بدل مواصلات</span><span class="font-bold">300 ج.م</span></div>
+<div class="flex justify-between text-gray-600"><span>أجر إضافي</span><span class="font-bold">200 ج.م</span></div>
+<div class="border-t border-dashed border-gray-200 pt-2 flex justify-between">
+<span class="font-bold text-[#5B2C8D]">إجمالي الاستحقاقات</span>
+<span class="font-extrabold text-[#5B2C8D]">5,000 ج.م</span>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-xl p-3 border border-gray-100">
+<h3 class="text-xs font-bold mb-2">📅 الحضور والانصراف</h3>
+<div class="grid grid-cols-3 gap-2 text-center">
+<div class="bg-purple-50 rounded-lg py-2 border border-purple-100"><div class="text-base font-extrabold text-[#5B2C8D]">22</div><div class="text-[10px] text-gray-600">أيام الحضور</div></div>
+<div class="bg-amber-50 rounded-lg py-2 border border-amber-100"><div class="text-base font-extrabold text-[#F39C12]">3</div><div class="text-[10px] text-gray-600">أذونات</div></div>
+<div class="bg-red-50 rounded-lg py-2 border border-red-100"><div class="text-base font-extrabold text-[#E74C3C]">1</div><div class="text-[10px] text-gray-600">خصومات</div></div>
+</div>
+</div>
+</div>
+<div class="absolute bottom-0 inset-x-0 bg-white border-t border-gray-100 p-3.5 z-20 shadow-lg">
+<button class="w-full bg-[#5B2C8D] text-white py-3 rounded-xl font-bold text-xs flex items-center justify-center gap-2">
+<span>✍️</span><span>تأكيد القبض بالتوقيع</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Screen 2: Signature -->
+<section class="flex flex-col items-center max-w-[360px]">
+<div class="mb-4 flex items-center gap-2 bg-white px-4 py-1.5 rounded-full border border-purple-100 text-xs font-bold text-[#5B2C8D]">
+<span class="w-2 h-2 rounded-full bg-[#F39C12] animate-ping"></span>2. التوقيع الإلكتروني
+</div>
+<div class="phone-frame">
+<div class="h-9 px-6 pt-2 flex justify-between items-center text-[11px] font-semibold text-gray-700 bg-white"><span>09:41</span><span>📶 📡 🔋</span></div>
+<div class="px-4 py-2.5 flex items-center justify-between border-b border-gray-100 bg-white">
+<button class="p-1.5 text-[#2C3E50]"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+<h2 class="text-base font-bold font-heading">تأكيد استلام المرتب</h2><div class="w-6"></div>
+</div>
+<div class="flex-1 overflow-y-auto px-4 py-3.5 bg-[#F9FAFB] space-y-3.5 no-scrollbar">
+<div class="bg-purple-50 border border-purple-200/70 rounded-2xl p-3.5 text-center">
+<div class="text-[11px] font-medium text-[#5B2C8D] mb-0.5">صافي المرتب المحول</div>
+<div class="text-2xl font-extrabold text-[#5B2C8D] font-heading">5,000 جنيه</div>
+<div class="text-[11px] text-gray-500 mt-0.5">شهر أكتوبر 2026</div>
+</div>
+<div class="bg-amber-50 rounded-xl p-3 border border-amber-200">
+<div class="flex items-start gap-2">
+<span class="text-[#F39C12] text-sm">⚠️</span>
+<p class="text-[11px] text-gray-700 font-medium">أقر أنا الموقع أدناه بأنني قد اطلعت على كافة تفاصيل راتبي لشهر أكتوبر 2026، واستلمت كامل مستحقاتي.</p>
+</div>
+</div>
+<div class="bg-white rounded-2xl p-3 border-2 border-dashed border-[#5B2C8D]/40">
+<div class="flex justify-between items-center mb-1 text-[11px] text-gray-500">
+<span class="font-bold text-[#5B2C8D]">✒️ وقع بيدك داخل المربع:</span>
+<span class="text-[10px] bg-purple-50 text-[#5B2C8D] px-2 py-0.5 rounded-full">توقيع رقمي ملزم</span>
+</div>
+<div class="w-full h-36 bg-[#FAFAFC] rounded-xl relative overflow-hidden flex items-center justify-center border border-gray-100">
+<span class="text-gray-300 text-[10px] absolute bottom-1.5 left-2">✍️ التوقيع الرقمي المعتمد</span>
+<svg class="w-full h-full p-2" fill="none" viewBox="0 0 300 120">
+<path d="M 40 85 C 80 40, 110 30, 140 60 C 170 90, 200 40, 230 45 C 260 50, 275 70, 280 85" stroke="#5B2C8D" stroke-linecap="round" stroke-width="2.8"/>
+<path d="M 50 65 Q 90 20 135 45 T 195 65 Q 235 30 265 50" stroke="#3B1861" stroke-linecap="round" stroke-width="3.5"/>
+<path d="M 35 90 C 85 98, 175 92, 260 88" stroke="#3B1861" stroke-linecap="round" stroke-width="2.2"/>
+<circle cx="165" cy="32" fill="#3B1861" r="2.5"/><circle cx="215" cy="38" fill="#3B1861" r="2.5"/>
+</svg>
+</div>
+<div class="flex justify-between items-center mt-2 text-xs">
+<button class="text-[#5B2C8D] font-semibold text-[11px]">🔄 إعادة التوقيع</button>
+<button class="text-[#E74C3C] font-medium text-[11px]">🗑️ مسح</button>
+</div>
+</div>
+<label class="flex items-center gap-2.5 bg-white p-2.5 rounded-xl border border-gray-100">
+<input checked type="checkbox" class="w-4 h-4 rounded text-[#5B2C8D]">
+<span class="text-xs font-semibold text-gray-700">أوافق وأقر بصحة البيانات</span>
+</label>
+<div class="space-y-2 pt-1">
+<button class="w-full bg-[#5B2C8D] text-white py-3 rounded-xl font-bold text-xs flex items-center justify-center gap-2">✅ تأكيد واعتماد التوقيع</button>
+<button class="w-full bg-transparent text-[#5B2C8D] border border-purple-300 py-2.5 rounded-xl font-bold text-xs">⬅️ إلغاء والعودة</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Screen 3: Success -->
+<section class="flex flex-col items-center max-w-[360px]">
+<div class="mb-4 flex items-center gap-2 bg-white px-4 py-1.5 rounded-full border border-purple-100 text-xs font-bold text-[#5B2C8D]">
+<span class="w-2 h-2 rounded-full bg-[#27AE60]"></span>3. إيصال التأكيد
+</div>
+<div class="phone-frame">
+<div class="h-9 px-6 pt-2 flex justify-between items-center text-[11px] font-semibold text-gray-700 bg-white"><span>09:42</span><span>📶 📡 🔋</span></div>
+<div class="px-6 py-2 flex items-center justify-center border-b border-gray-50 bg-white">
+<div class="w-10 h-6 flex items-center justify-center bg-gradient-to-br from-[#5B2C8D] to-[#7B4C9D] rounded-md">
+<span class="text-white font-heading font-black text-sm">P</span></div>
+</div>
+<div class="flex-1 overflow-y-auto px-4 py-3 bg-[#F8F9FA] space-y-3.5 no-scrollbar flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex flex-col items-center pt-2">
+<div class="relative flex items-center justify-center">
+<div class="w-20 h-20 rounded-full bg-emerald-100 flex items-center justify-center">
+<div class="w-14 h-14 rounded-full bg-[#27AE60] flex items-center justify-center shadow-lg shadow-green-500/30">
+<svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" stroke-width="3.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+</div>
+</div>
+</div>
+<h2 class="text-base font-extrabold text-[#2C3E50] mt-2.5 font-heading text-center">تم تأكيد القبض وتوثيق التوقيع بنجاح</h2>
+<p class="text-[11px] text-gray-500 text-center mt-0.5">شكراً لك! تم تسجيل استلامك للمرتب</p>
+</div>
+<div class="bg-white border border-gray-200 rounded-2xl p-4 shadow-sm text-xs space-y-2.5">
+<div class="flex justify-between items-center pb-2 border-b border-gray-100">
+<span class="text-[10px] font-bold text-gray-400">إيصال صرف راتب رقمي</span>
+<span class="bg-green-100 text-[#27AE60] font-bold text-[10px] px-2 py-0.5 rounded">معتمد</span>
+</div>
+<div class="flex justify-between text-gray-600"><span class="text-[11px]">رقم المرجع:</span><span class="font-mono font-bold text-[#5B2C8D] text-xs" dir="ltr">#SAL-2026-001234</span></div>
+<div class="flex justify-between text-gray-600"><span class="text-[11px]">الموظف:</span><span class="font-bold">محمد أحمد (TX89421)</span></div>
+<div class="flex justify-between text-gray-600 border-t border-dashed border-gray-100 pt-1.5"><span class="text-[11px]">المبلغ:</span><span class="font-extrabold text-[#27AE60] text-sm">5,000 جنيه</span></div>
+<div class="flex justify-between text-gray-600"><span class="text-[11px]">تاريخ التوقيع:</span><span class="font-medium text-[11px]">20 أكتوبر 2026 — 14:30</span></div>
+<div class="flex justify-between text-gray-600 border-t border-gray-100 pt-1.5"><span class="text-[10px]">طريقة التوثيق:</span><span class="text-[10px] font-medium text-purple-700 bg-purple-50 px-2 py-0.5 rounded">توقيع رقمي 256-bit</span></div>
+</div>
+<div class="bg-blue-50 border border-blue-100 rounded-xl p-2.5 text-[11px] text-blue-900 flex items-start gap-2">
+<span class="text-sm">📄</span><span>تم حفظ نسخة في أرشيف كشوف المرتبات، ويمكنك تحميل PDF في أي وقت.</span>
+</div>
+</div>
+<div class="space-y-2 pt-2">
+<button class="w-full bg-white text-[#5B2C8D] border-2 border-[#5B2C8D] py-2.5 rounded-xl font-bold text-xs">🏠 العودة للرئيسية</button>
+<p class="text-[10px] text-center text-gray-400">نسخة رسمية معتمدة من PayDesk</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="text-center text-xs text-gray-500 mt-8">PayDesk • Android 360×800 • RTL</footer>
+</body>
+</html>

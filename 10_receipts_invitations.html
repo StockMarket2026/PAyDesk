@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><title>PayDesk - Receipts & Invitations</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Tajawal:wght@500;700;800;900&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet">
+<script>tailwind.config={theme:{extend:{colors:{brand:{purple:'#5B2C8D','purple-dark':'#441C6E','purple-light':'#F3E8FF',orange:'#F39C12','orange-light':'#FEF5E7',green:'#27AE60','green-light':'#E8F8F0',red:'#E74C3C','red-light':'#FDEDEC',dark:'#2C3E50',muted:'#6B7280',border:'#E5E7EB',bg:'#F8F9FA'}},fontFamily:{tajawal:['Tajawal'],cairo:['Cairo'],mono:['JetBrains Mono']}}}}</script>
+<style>
+body{font-family:'Cairo',sans-serif;background:#EEF2F7;padding:20px}
+.no-scrollbar::-webkit-scrollbar{display:none}
+</style>
+</head>
+<body class="min-h-screen flex flex-col items-center">
+<header class="max-w-7xl mx-auto text-center mb-10">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-purple-light text-brand-purple text-xs font-medium mb-3 border border-purple-200">
+<span class="w-2 h-2 rounded-full bg-brand-orange animate-pulse"></span>PayDesk Final Modules</div>
+<h1 class="text-3xl md:text-5xl font-black font-tajawal text-[#1E1235] mb-3">توليد إيصالات الرواتب وإدارة دعوات المسؤولين</h1>
+<p class="text-brand-muted max-w-3xl mx-auto text-sm md:text-base">منظومة التوليد التلقائي لملفات الإيصالات PDF الشهرية (بوابة المحاسب)، ونظام إدارة روابط الدعوات للأدوار القيادية (بوابة المدير العام)</p>
+</header>
+<main class="max-w-[1360px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+<!-- Screen 1: Receipts -->
+<section class="flex flex-col items-center">
+<div class="flex items-center gap-2 mb-3"><span class="w-2.5 h-2.5 rounded-full bg-brand-purple"></span>
+<span class="font-tajawal font-bold text-xs text-slate-700">1. توليد الإيصالات</span></div>
+<div class="w-[360px] h-[800px] bg-brand-bg rounded-[44px] shadow-2xl border-[8px] border-[#1F242F] relative overflow-hidden flex flex-col">
+<div class="bg-white pt-2.5 px-6 pb-1.5 flex items-center justify-between text-[11px] font-bold">
+<span>09:41</span><div class="w-24 h-4 bg-[#1F242F] rounded-full mx-auto -mt-1"></div><span>85%</span></div>
+<div class="bg-white px-4 py-3 flex items-center justify-between border-b border-brand-border">
+<button class="w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></button>
+<h2 class="font-tajawal font-extrabold text-base">الإيصالات وسجلات الرواتب</h2>
+<button class="w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center text-brand-purple">⏱️</button></div>
+<div class="flex-1 overflow-y-auto no-scrollbar p-4 space-y-3.5">
+<div class="rounded-2xl p-4 text-white relative overflow-hidden shadow-md" style="background:linear-gradient(135deg,#5B2C8D 0%,#3F1B66 100%)">
+<div class="absolute -left-6 -bottom-6 w-24 h-24 rounded-full bg-white/5"></div>
+<div class="flex items-start justify-between mb-3 relative z-10">
+<div><span class="inline-block bg-white/20 text-[10px] px-2.5 py-0.5 rounded-full mb-1 text-purple-100">مسير معتمد</span>
+<h3 class="font-tajawal font-bold text-lg">إيصالات أكتوبر 2026</h3>
+<p class="text-xs text-purple-200 mt-0.5">85 إيصال جاهز للتحميل</p></div>
+<div class="w-12 h-12 rounded-2xl bg-white/15 border border-white/25 flex items-center justify-center text-2xl">📄</div></div>
+<button class="w-full py-2.5 bg-white text-brand-purple rounded-xl font-tajawal font-bold text-xs flex items-center justify-center gap-2">
+📥 توليد وتحميل ملف PDF شامل</button></div>
+<div class="bg-white rounded-2xl p-3 border border-brand-border space-y-2">
+<div class="flex items-center justify-between text-xs font-bold px-0.5">
+<span>⚙️ فلاتر التصدير:</span><span class="text-[11px] text-brand-purple">إعادة الضبط</span></div>
+<div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar pb-1 text-[11px]">
+<button class="px-2.5 py-1 bg-brand-purple text-white rounded-lg font-bold whitespace-nowrap">كل الفروع ✓</button>
+<button class="px-2.5 py-1 bg-slate-100 text-slate-600 rounded-lg whitespace-nowrap">علي وسيف (30)</button>
+<button class="px-2.5 py-1 bg-slate-100 text-slate-600 rounded-lg whitespace-nowrap">مروان (25)</button>
+<button class="px-2.5 py-1 bg-slate-100 text-slate-600 rounded-lg whitespace-nowrap">علاء وهبة (30)</button></div>
+<div class="flex items-center gap-1.5 text-[11px]">
+<button class="px-3 py-1 bg-brand-green-light border border-green-300 text-brand-green font-bold rounded-lg flex items-center gap-1">✓ قبضوا وموقعين (85)</button>
+<button class="px-3 py-1 bg-slate-100 text-slate-500 rounded-lg">الكل (150)</button></div></div>
+<div class="bg-white rounded-2xl p-3 border border-brand-border">
+<div class="flex items-center justify-between mb-2 px-1">
+<span class="font-tajawal font-bold text-xs">معاينة الإيصالات:</span>
+<span class="text-[11px] font-mono text-brand-muted">85 إيصال</span></div>
+<div class="space-y-1.5">
+<div class="flex items-center justify-between p-2 rounded-xl bg-slate-50 border border-slate-100">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-purple-100 text-brand-purple font-bold text-xs flex items-center justify-center">م أ</div>
+<div><h4 class="font-tajawal font-bold text-xs">محمد أحمد منصور</h4>
+<p class="text-[10px] text-slate-400">TX12345 • علي وسيف</p></div></div>
+<div class="text-left"><span class="font-tajawal font-extrabold text-xs">5,000 ج.م</span>
+<div class="flex items-center justify-end gap-1 text-[10px] text-brand-green font-semibold">✓ موقع</div></div></div>
+<div class="flex items-center justify-between p-2 rounded-xl bg-slate-50 border border-slate-100">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-amber-100 text-brand-orange font-bold text-xs flex items-center justify-center">س ع</div>
+<div><h4 class="font-tajawal font-bold text-xs">سارة علي إبراهيم</h4>
+<p class="text-[10px] text-slate-400">TX12346 • علي وسيف</p></div></div>
+<div class="text-left"><span class="font-tajawal font-extrabold text-xs">4,200 ج.م</span>
+<div class="flex items-center justify-end gap-1 text-[10px] text-brand-green font-semibold">✓ موقع</div></div></div>
+<div class="flex items-center justify-between p-2 rounded-xl bg-slate-50 border border-slate-100">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-emerald-100 text-brand-green font-bold text-xs flex items-center justify-center">خ ح</div>
+<div><h4 class="font-tajawal font-bold text-xs">خالد حسن عبد ربه</h4>
+<p class="text-[10px] text-slate-400">TX12347 • مروان</p></div></div>
+<div class="text-left"><span class="font-tajawal font-extrabold text-xs">6,500 ج.م</span>
+<div class="flex items-center justify-end gap-1 text-[10px] text-brand-green font-semibold">✓ موقع</div></div></div>
+<div class="text-center py-1.5 bg-purple-50/60 rounded-lg text-brand-purple font-tajawal font-bold text-[11px] border border-dashed border-purple-200">
++ يوجد 82 موظف آخر موقع إلكترونياً</div></div></div>
+<div class="p-3 bg-brand-purple-light/70 rounded-2xl border border-purple-200 flex items-start gap-2.5">
+<div class="w-5 h-5 rounded-full bg-brand-purple text-white flex items-center justify-center text-xs shrink-0 mt-0.5">ⓘ</div>
+<p class="text-[11px] text-brand-purple-dark leading-relaxed">
+الملف المولد سيحتوي على إيصال رسمي مستقل لكل موظف مدمج به التوقيع الإلكتروني.</p></div>
+</div>
+<div class="p-4 bg-white border-t border-brand-border shadow-lg">
+<button class="w-full h-14 bg-brand-purple text-white rounded-2xl font-tajawal font-bold text-sm flex items-center justify-center gap-2">
+📄 توليد وتصدير الإيصالات (85 إيصال)</button></div>
+<div class="bg-white pb-2 pt-1 flex justify-center">
+<div class="w-32 h-1 bg-slate-300 rounded-full"></div></div>
+</div>
+</section>
+<!-- Screen 2: Invitations -->
+<section class="flex flex-col items-center">
+<div class="flex items-center gap-2 mb-3"><span class="w-2.5 h-2.5 rounded-full bg-brand-orange"></span>
+<span class="font-tajawal font-bold text-xs text-slate-700">2. إدارة الدعوات</span></div>
+<div class="w-[360px] h-[800px] bg-brand-bg rounded-[44px] shadow-2xl border-[8px] border-[#1F242F] relative overflow-hidden flex flex-col">
+<div class="bg-white pt-2.5 px-6 pb-1.5 flex items-center justify-between text-[11px] font-bold">
+<span>09:42</span><div class="w-24 h-4 bg-[#1F242F] rounded-full mx-auto -mt-1"></div><span>85%</span></div>
+<div class="bg-white px-4 py-3 flex items-center justify-between border-b border-brand-border">
+<div class="w-9 h-9"></div>
+<h2 class="font-tajawal font-extrabold text-base">الدعوات والروابط الإدارية</h2>
+<button class="w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center">❓</button></div>
+<div class="flex-1 overflow-y-auto no-scrollbar p-4 space-y-3.5">
+<div class="rounded-2xl p-3.5 bg-brand-purple-light border border-purple-200 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-brand-purple text-white flex items-center justify-center text-lg">📨</div>
+<div><h3 class="font-tajawal font-bold text-sm">دعوة مستخدم جديد</h3>
+<p class="text-[11px] text-brand-muted">أرسل دعوة للمناصب الإدارية العليا</p></div></div>
+<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-purple-200 text-brand-purple">Super Admin</span></div>
+<button class="w-full py-3 bg-brand-purple text-white rounded-xl font-tajawal font-bold text-xs flex items-center justify-center gap-2">
++ دعوة مستخدم جديد (رابط مؤقت)</button>
+<div class="bg-slate-200/80 p-1 rounded-xl flex items-center text-xs font-tajawal font-bold">
+<button class="flex-1 py-1.5 bg-white text-brand-purple rounded-lg shadow-sm flex items-center justify-center gap-1.5">
+<span>النشطة</span><span class="w-4 h-4 rounded-full bg-brand-orange text-white text-[10px] flex items-center justify-center font-mono">3</span></button>
+<button class="flex-1 py-1.5 text-slate-600">المستخدمة (8)</button>
+<button class="flex-1 py-1.5 text-slate-600">الملغية (2)</button></div>
+<div class="space-y-3">
+<div class="bg-white rounded-2xl p-3.5 border border-brand-border border-r-[5px] border-r-brand-orange">
+<div class="flex items-center justify-between mb-2">
+<span class="inline-flex items-center gap-1 text-[11px] font-bold px-2 py-0.5 rounded-full bg-amber-100 text-amber-900">🟡 مدير فرع</span>
+<span class="text-[10px] font-bold font-mono text-brand-red flex items-center gap-1 bg-red-50 px-2 py-0.5 rounded-full border border-red-200 animate-pulse">⏱ 45 دقيقة</span></div>
+<div class="flex items-center justify-between text-xs mb-2">
+<div><span class="text-slate-700">المدعو: </span><span class="font-extrabold">أحمد محمد الشناوي</span></div>
+<div class="text-[11px] text-brand-muted">فرع: <span class="font-bold">علي وسيف</span></div></div>
+<div class="bg-slate-100/90 rounded-xl p-2 flex items-center justify-between border border-slate-200 mb-2.5">
+<span class="font-mono font-bold text-xs text-brand-purple tracking-widest" dir="ltr">ABC-123-XYZ</span>
+<button class="text-[10px] font-bold text-brand-purple bg-white px-2 py-0.5 rounded-lg border border-purple-200">📋 نسخ</button></div>
+<div class="flex items-center justify-between pt-1 border-t border-slate-100 text-[11px] font-tajawal font-bold">
+<button class="text-brand-purple">📋 الرابط</button>
+<button class="text-brand-orange">🔄 إعادة إرسال</button>
+<button class="text-brand-red">❌ إلغاء</button></div></div>
+<div class="bg-white rounded-2xl p-3.5 border border-brand-border border-r-[5px] border-r-brand-orange">
+<div class="flex items-center justify-between mb-2">
+<span class="inline-flex items-center gap-1 text-[11px] font-bold px-2 py-0.5 rounded-full bg-orange-100 text-orange-900">🟠 محاسب</span>
+<span class="text-[10px] font-mono text-slate-600 bg-slate-100 px-2 py-0.5 rounded-full">⏱ 22 دقيقة</span></div>
+<div class="flex items-center justify-between text-xs mb-2">
+<div><span class="text-slate-700">المدعو: </span><span class="font-extrabold">مروان عبد الرحمن</span></div>
+<div class="text-[11px] text-brand-muted">النطاق: <span class="font-bold">كل الفروع</span></div></div>
+<div class="bg-slate-100/90 rounded-xl p-2 flex items-center justify-between border border-slate-200 mb-2.5">
+<span class="font-mono font-bold text-xs text-brand-purple tracking-widest" dir="ltr">PAY-789-ACC</span>
+<button class="text-[10px] font-bold text-brand-purple bg-white px-2 py-0.5 rounded-lg border border-purple-200">📋 نسخ</button></div>
+<div class="flex items-center justify-between pt-1 border-t border-slate-100 text-[11px] font-tajawal font-bold">
+<button class="text-brand-purple">📋 الرابط</button>
+<button class="text-brand-orange">🔄 إعادة إرسال</button>
+<button class="text-brand-red">❌ إلغاء</button></div></div>
+<div class="bg-white rounded-2xl p-3.5 border border-brand-border border-r-[5px] border-r-brand-orange">
+<div class="flex items-center justify-between mb-2">
+<span class="inline-flex items-center gap-1 text-[11px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-900">🟢 HR</span>
+<span class="text-[10px] font-mono text-slate-600 bg-slate-100 px-2 py-0.5 rounded-full">⏱ 50 دقيقة</span></div>
+<div class="flex items-center justify-between text-xs mb-2">
+<div><span class="text-slate-700">المدعو: </span><span class="font-extrabold">نوران طارق يوسف</span></div>
+<div class="text-[11px] text-brand-muted">فرع: <span class="font-bold">علاء وهبة</span></div></div>
+<div class="bg-slate-100/90 rounded-xl p-2 flex items-center justify-between border border-slate-200 mb-2.5">
+<span class="font-mono font-bold text-xs text-brand-purple tracking-widest" dir="ltr">HRM-445-HUB</span>
+<button class="text-[10px] font-bold text-brand-purple bg-white px-2 py-0.5 rounded-lg border border-purple-200">📋 نسخ</button></div>
+<div class="flex items-center justify-between pt-1 border-t border-slate-100 text-[11px] font-tajawal font-bold">
+<button class="text-brand-purple">📋 الرابط</button>
+<button class="text-brand-orange">🔄 إعادة إرسال</button>
+<button class="text-brand-red">❌ إلغاء</button></div></div>
+</div></div>
+<div class="bg-white border-t border-brand-border px-3 py-2 flex items-center justify-around text-[10px] font-bold text-slate-500">
+<div class="flex flex-col items-center gap-0.5">🏠<span>الرئيسية</span></div>
+<div class="flex flex-col items-center gap-0.5">🏢<span>الفروع</span></div>
+<div class="flex flex-col items-center gap-0.5">👥<span>المستخدمين</span></div>
+<div class="flex flex-col items-center gap-0.5 text-brand-purple font-extrabold">📨<span>الدعوات</span></div>
+<div class="flex flex-col items-center gap-0.5">📊<span>التقارير</span></div></div>
+<div class="bg-white pb-2 pt-0.5 flex justify-center">
+<div class="w-32 h-1 bg-slate-300 rounded-full"></div></div>
+</div>
+</section>
+<!-- Screen 3: Create Invitation -->
+<section class="flex flex-col items-center">
+<div class="flex items-center gap-2 mb-3"><span class="w-2.5 h-2.5 rounded-full bg-brand-green"></span>
+<span class="font-tajawal font-bold text-xs text-slate-700">3. إنشاء دعوة</span></div>
+<div class="w-[360px] h-[800px] bg-brand-bg rounded-[44px] shadow-2xl border-[8px] border-[#1F242F] relative overflow-hidden flex flex-col">
+<div class="bg-white pt-2.5 px-6 pb-1.5 flex items-center justify-between text-[11px] font-bold">
+<span>09:44</span><div class="w-24 h-4 bg-[#1F242F] rounded-full mx-auto -mt-1"></div><span>84%</span></div>
+<div class="bg-white px-4 py-3 flex items-center justify-between border-b border-brand-border">
+<button class="w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></button>
+<h2 class="font-tajawal font-extrabold text-base">دعوة مستخدم جديد</h2><div class="w-9"></div></div>
+<div class="flex-1 overflow-y-auto no-scrollbar p-4 space-y-3.5">
+<div class="p-3 bg-brand-purple-light/80 rounded-2xl border border-purple-200 flex items-start gap-2.5">
+<div class="w-5 h-5 rounded-full bg-brand-purple text-white flex items-center justify-center text-xs shrink-0 mt-0.5">ⓘ</div>
+<p class="text-[11px] text-brand-purple-dark leading-relaxed">
+سيتم توليد رابط دعوة فوري صالح <strong>لمدة ساعة واحدة فقط</strong>.</p></div>
+<div class="bg-white rounded-2xl p-3.5 border border-brand-border space-y-3.5">
+<div>
+<label class="block font-tajawal font-bold text-xs mb-1.5">الدور <span class="text-brand-red">*</span></label>
+<div class="grid grid-cols-2 gap-2">
+<div class="p-2.5 rounded-xl border border-slate-200 bg-slate-50 cursor-pointer flex items-center gap-2">
+<span class="text-base">🔴</span><div><h5 class="font-tajawal font-bold text-xs">مدير عام</h5>
+<p class="text-[9px] text-slate-400">صلاحيات شاملة</p></div></div>
+<div class="p-2.5 rounded-xl border-2 border-brand-purple bg-brand-purple-light/50 cursor-pointer flex items-center gap-2 relative">
+<span class="text-base">🟡</span><div><h5 class="font-tajawal font-bold text-xs text-brand-purple">مدير فرع</h5>
+<p class="text-[9px] text-purple-700">إدارة الفرع</p></div>
+<span class="absolute top-1 left-1 text-[10px] text-brand-purple">✓</span></div>
+<div class="p-2.5 rounded-xl border border-slate-200 bg-slate-50 cursor-pointer flex items-center gap-2">
+<span class="text-base">🟠</span><div><h5 class="font-tajawal font-bold text-xs">محاسب</h5>
+<p class="text-[9px] text-slate-400">مسير الرواتب</p></div></div>
+<div class="p-2.5 rounded-xl border border-slate-200 bg-slate-50 cursor-pointer flex items-center gap-2">
+<span class="text-base">🟢</span><div><h5 class="font-tajawal font-bold text-xs">مسؤول HR</h5>
+<p class="text-[9px] text-slate-400">التوظيف</p></div></div>
+</div></div>
+<div>
+<label class="block font-tajawal font-bold text-xs mb-1">الفرع <span class="text-brand-red">*</span></label>
+<div class="relative">
+<select class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs font-bold appearance-none">
+<option>فرع علي وسيف</option><option>فرع مروان</option><option>فرع علاء وهبة</option>
+<option>كل الفروع</option></select>
+<div class="absolute inset-y-0 left-3 flex items-center text-slate-400">▼</div></div></div>
+<div><label class="block font-tajawal font-bold text-xs mb-1">الاسم <span class="text-brand-red">*</span></label>
+<input type="text" value="أحمد محمد الشناوي" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs font-semibold"></div>
+<div><label class="block font-tajawal font-bold text-xs mb-1">رقم الهاتف</label>
+<input type="tel" dir="ltr" value="+20 102 345 6789" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs font-mono text-left"></div>
+</div>
+<div class="bg-white rounded-2xl p-3 border border-brand-border">
+<span class="block font-tajawal font-bold text-xs mb-2">معاينة الدعوة:</span>
+<div class="p-2.5 rounded-xl bg-slate-50 border border-dashed border-purple-300">
+<div class="flex items-center gap-2 mb-1.5">
+<span class="w-6 h-6 rounded-full bg-brand-purple text-white flex items-center justify-center text-[10px] font-bold">P</span>
+<div><h6 class="font-tajawal font-bold text-xs">دعوة للانضمام إلى PayDesk</h6>
+<p class="text-[9px] text-slate-500">من المدير العام</p></div></div>
+<div class="bg-white p-2 rounded-lg border border-slate-200 text-[11px] space-y-1">
+<div class="flex justify-between"><span class="text-slate-500">الدور:</span>
+<span class="font-bold text-amber-900">مدير فرع • علي وسيف</span></div>
+<div class="flex justify-between"><span class="text-slate-500">الصلاحية:</span>
+<span class="font-bold text-brand-red">60 دقيقة</span></div></div></div></div>
+</div>
+<div class="p-4 bg-white border-t border-brand-border shadow-lg">
+<button class="w-full h-14 bg-brand-purple text-white rounded-2xl font-tajawal font-bold text-sm flex items-center justify-center gap-2">
+📨 توليد وإرسال رابط الدعوة</button></div>
+<div class="bg-white pb-2 pt-1 flex justify-center">
+<div class="w-32 h-1 bg-slate-300 rounded-full"></div></div>
+</div>
+</section>
+</main>
+<footer class="text-center text-xs text-brand-muted mt-10">PayDesk • Android 360×800 RTL • K&M Solutions</footer>
+</body>
+</html>

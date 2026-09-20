@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><title>PayDesk - Leader Review</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Tajawal:wght@500;700;800;900&display=swap" rel="stylesheet">
+<script>tailwind.config={theme:{extend:{colors:{brand:{purple:'#5B2C8D','purple-dark':'#482170','purple-light':'#F3E8FF',orange:'#F39C12','orange-light':'#FEF5E7',green:'#27AE60','green-light':'#E8F5E9',red:'#E74C3C','red-light':'#FDEDEC',dark:'#2C3E50',muted:'#6B7280',bg:'#F8F9FA',border:'#E5E7EB'}},fontFamily:{tajawal:['Tajawal'],cairo:['Cairo']}}}}</script>
+<style>
+body{background:#F0F2F6;font-family:'Cairo',sans-serif;padding:20px}
+.phone{width:360px;height:800px;background:#F8F9FA;border-radius:36px;overflow:hidden;border:5px solid #1F2937;position:relative;display:flex;flex-direction:column;box-shadow:0 25px 50px rgba(0,0,0,0.2)}
+.no-scrollbar::-webkit-scrollbar{display:none}
+</style>
+</head>
+<body class="min-h-screen flex flex-col items-center">
+<header class="text-center max-w-4xl mb-8">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-100 text-[#5B2C8D] text-xs font-bold font-tajawal mb-3 border border-purple-200">
+<span class="w-2 h-2 rounded-full bg-[#F39C12] animate-pulse"></span>PayDesk Leader Approval Flow</div>
+<h1 class="text-3xl md:text-4xl font-extrabold font-tajawal text-[#1E293B]">شاشات مراجعة واعتماد طلبات الفريق</h1>
+<p class="text-[#6B7280] text-sm mt-2 max-w-2xl mx-auto">بوابة القائد أحمد لتحديد نوع الإجازة الإلزامي (بإذن/بدون إذن/إجازة ممتدة) • Android 360×800 RTL</p>
+</header>
+<div class="w-full max-w-[1260px] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+<!-- Screen 1 -->
+<div class="flex flex-col items-center">
+<div class="flex items-center gap-2 mb-3 text-xs font-bold font-tajawal text-[#5B2C8D]">
+<span class="w-2.5 h-2.5 rounded-full bg-[#5B2C8D]"></span>1. قائمة طلبات فريقي</div>
+<div class="phone">
+<div class="h-8 bg-white px-6 flex items-center justify-between text-[11px] font-bold shrink-0 border-b border-gray-100">
+<span>09:41</span><div class="w-24 h-4 bg-gray-900 rounded-full mx-auto"></div><span>📶 📡 🔋</span></div>
+<div class="bg-white px-4 py-3 border-b border-brand-border flex items-center justify-between shrink-0">
+<button class="w-9 h-9 rounded-full flex items-center justify-center">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg></button>
+<div class="text-center"><h2 class="text-base font-bold font-tajawal">طلبات فريقي</h2>
+<p class="text-[10px] text-brand-muted">فرع علي وسيف • 8 أعضاء</p></div>
+<button class="w-9 h-9 rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center">⚙️</button></div>
+<div class="flex-1 overflow-y-auto no-scrollbar p-3.5 space-y-3">
+<div class="bg-gray-200/80 p-1 rounded-xl flex items-center text-xs font-bold font-tajawal">
+<button class="flex-1 py-1.5 text-gray-600 rounded-lg">الكل (5)</button>
+<button class="flex-1 py-1.5 bg-brand-purple text-white rounded-lg flex items-center justify-center gap-1.5">
+<span>قيد المراجعة</span><span class="w-4 h-4 rounded-full bg-brand-orange text-white text-[10px] flex items-center justify-center font-bold">2</span></button>
+<button class="flex-1 py-1.5 text-gray-600 rounded-lg">موافق</button>
+<button class="flex-1 py-1.5 text-gray-600 rounded-lg">مرفوض</button></div>
+<div class="bg-amber-50 border border-amber-200 rounded-xl p-2.5 flex items-start gap-2.5">
+<div class="w-7 h-7 rounded-lg bg-amber-100 flex items-center justify-center shrink-0 text-amber-600">⚠️</div>
+<div class="flex-1 text-xs">
+<div class="flex items-center justify-between font-bold text-amber-900 font-tajawal">
+<span>تنبيه مهلة الرد</span><span class="text-[10px] bg-amber-200 text-amber-800 px-1.5 rounded">عاجل</span></div>
+<p class="text-amber-800 mt-0.5 leading-snug">لديك <strong>1 طلب معلق منذ 28 ساعة</strong>.</p>
+<a class="text-brand-orange font-bold mt-1 text-[11px] block">راجعه الآن ←</a></div></div>
+<div class="flex items-center justify-between pt-1">
+<span class="text-xs font-bold font-tajawal">طلبات بانتظار قرارك (2)</span>
+<span class="text-[10px] text-brand-muted">محدث الآن</span></div>
+<div class="bg-white rounded-xl border border-gray-200 p-3 border-r-4 border-r-brand-orange">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-brand-purple text-white flex items-center justify-center font-bold text-xs font-tajawal">م أ</div>
+<div><div class="flex items-center gap-2"><h3 class="text-sm font-bold font-tajawal">محمد أحمد</h3>
+<span class="text-[10px] text-gray-400">TX12345</span></div>
+<p class="text-[11px] text-brand-muted">Sales Rep • علي وسيف</p></div></div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-amber-50 border border-amber-200 text-brand-orange text-[10px] font-bold font-tajawal">
+<span class="w-1.5 h-1.5 rounded-full bg-brand-orange animate-ping"></span>قيد المراجعة</span></div>
+<div class="mt-2.5 bg-gray-50 rounded-lg p-2 flex items-center justify-between text-xs">
+<div class="text-gray-700">📅 من <strong>15</strong> إلى <strong>17 أكتوبر 2026</strong></div>
+<span class="px-2 py-0.5 rounded bg-purple-50 text-brand-purple font-bold text-[11px] font-tajawal">3 أيام</span></div>
+<div class="mt-2 pt-2 border-t border-gray-100 flex items-center justify-between text-[11px] text-brand-muted">
+<span>⏰ منذ 3 ساعات</span>
+<span class="text-brand-purple font-bold font-tajawal">مراجعة ←</span></div></div>
+<div class="bg-white rounded-xl border border-gray-200 p-3 border-r-4 border-r-brand-orange">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-amber-500 text-white flex items-center justify-center font-bold text-xs font-tajawal">س ع</div>
+<div><div class="flex items-center gap-2"><h3 class="text-sm font-bold font-tajawal">سارة علي</h3>
+<span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span></div>
+<p class="text-[11px] text-brand-muted">Sales Rep</p></div></div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-red-50 border border-red-200 text-brand-red text-[10px] font-bold font-tajawal">
+متأخر • 28 ساعة</span></div>
+<div class="mt-2.5 bg-gray-50 rounded-lg p-2 flex items-center justify-between text-xs">
+<div class="text-gray-700">📆 <strong>21 أكتوبر 2026</strong></div>
+<span class="px-2 py-0.5 rounded bg-gray-200 text-gray-800 font-bold text-[11px]">يوم</span></div>
+<div class="mt-2 pt-2 border-t border-gray-100 flex items-center justify-between text-[11px]">
+<span class="text-red-600 font-medium">⚠️ تجاوز المهلة</span>
+<span class="text-brand-purple font-bold font-tajawal">مراجعة ←</span></div></div>
+<div class="bg-white rounded-xl border border-gray-200 p-3 border-r-4 border-r-brand-green opacity-90">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold text-xs font-tajawal">خ ح</div>
+<div><h3 class="text-sm font-bold font-tajawal">خالد حسن</h3>
+<p class="text-[11px] text-brand-muted">Key Account Exec</p></div></div>
+<span class="px-2 py-0.5 rounded-full bg-green-50 border border-green-200 text-brand-green text-[10px] font-bold font-tajawal">
+✓ موافق (بإذن)</span></div>
+<div class="mt-2 text-xs text-gray-600 flex justify-between">
+<span>10 أكتوبر (يوم واحد)</span><span class="text-[10px] text-gray-400">منذ 5 أيام</span></div></div>
+</div>
+<div class="h-14 bg-white border-t border-brand-border px-4 flex items-center justify-around shrink-0 text-[10px] font-bold font-tajawal">
+<button class="flex flex-col items-center gap-1 text-gray-400">🏠<span>الرئيسية</span></button>
+<button class="flex flex-col items-center gap-1 text-brand-purple relative">
+<div class="relative">📋<span class="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-brand-orange"></span></div>
+<span class="font-bold">طلبات فريقي</span>
+<span class="w-1.5 h-1.5 rounded-full bg-brand-purple -mt-0.5"></span></button>
+<button class="flex flex-col items-center gap-1 text-gray-400">👥<span>فريقي</span></button>
+<button class="flex flex-col items-center gap-1 text-gray-400">👤<span>حسابي</span></button></div>
+</div>
+</div>
+<!-- Screen 2: Review Request -->
+<div class="flex flex-col items-center">
+<div class="flex items-center gap-2 mb-3 text-xs font-bold font-tajawal text-[#5B2C8D]">
+<span class="w-2.5 h-2.5 rounded-full bg-[#F39C12]"></span>2. مراجعة الطلب</div>
+<div class="phone">
+<div class="h-8 bg-white px-6 flex items-center justify-between text-[11px] font-bold shrink-0 border-b border-gray-100">
+<span>09:41</span><div class="w-24 h-4 bg-gray-900 rounded-full mx-auto"></div><span>📶 📡 🔋</span></div>
+<div class="bg-white px-4 py-3 border-b border-brand-border flex items-center justify-between shrink-0">
+<button class="w-9 h-9 rounded-full flex items-center justify-center">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg></button>
+<div class="text-center"><h2 class="text-base font-bold font-tajawal">مراجعة الطلب</h2>
+<p class="text-[10px] text-brand-orange font-bold font-tajawal">طلب إجازة • قيد المراجعة</p></div>
+<div class="w-9"></div></div>
+<div class="flex-1 overflow-y-auto no-scrollbar p-3.5 space-y-3 pb-24">
+<div class="bg-white rounded-xl border border-gray-200 p-3 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-brand-purple text-white flex items-center justify-center font-bold text-sm font-tajawal ring-2 ring-purple-100">م أ</div>
+<div><h3 class="text-sm font-bold font-tajawal">محمد أحمد</h3>
+<p class="text-[11px] text-brand-muted">Sales Rep • علي وسيف</p>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="text-[10px] bg-gray-100 text-gray-700 px-1.5 py-0.5 rounded font-mono font-bold">TX12345</span>
+<span class="text-[10px] text-green-700 font-bold bg-green-50 px-1.5 py-0.5 rounded">رصيد: 14 يوم</span></div></div></div>
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span></div>
+<div class="bg-white rounded-xl border border-gray-200 p-3.5 space-y-2.5">
+<div class="flex items-center justify-between border-b border-gray-100 pb-2">
+<div class="flex items-center gap-1.5 text-xs font-bold font-tajawal">📋 <span>تفاصيل الطلب</span></div>
+<span class="text-[10px] text-brand-muted">⏰ منذ 3 ساعات</span></div>
+<div class="grid grid-cols-2 gap-2 text-xs">
+<div class="bg-gray-50 p-2 rounded-lg border border-gray-100">
+<span class="text-[10px] text-brand-muted block">📅 من</span>
+<span class="font-bold text-gray-800">15 أكتوبر 2026</span></div>
+<div class="bg-gray-50 p-2 rounded-lg border border-gray-100">
+<span class="text-[10px] text-brand-muted block">📅 إلى</span>
+<span class="font-bold text-gray-800">17 أكتوبر 2026</span></div></div>
+<div class="bg-purple-50 border border-purple-200 rounded-lg p-2 flex items-center justify-between text-xs">
+<span class="text-brand-purple font-bold">📊 المدة:</span>
+<span class="bg-brand-purple text-white px-2.5 py-0.5 rounded-md font-bold font-tajawal text-xs">3 أيام</span></div>
+<div class="bg-gray-50 rounded-lg p-2.5 border border-gray-100">
+<span class="text-[10px] text-brand-muted block mb-1">💬 السبب:</span>
+<p class="text-xs text-gray-800">«ظروف عائلية طارئة تستدعي السفر.»</p></div>
+</div>
+<div class="bg-white rounded-xl border-2 border-brand-purple/30 p-3.5 space-y-2.5">
+<div><div class="flex items-center gap-1 text-sm font-bold font-tajawal">
+<span>🎯 نوع الإجازة المعتمدة</span>
+<span class="text-red-500">*</span>
+<span class="text-[10px] bg-purple-100 text-brand-purple px-1.5 rounded font-medium">إلزامي</span></div>
+<p class="text-[10px] text-brand-muted mt-0.5">اختر نوع الإجازة لتحديده للموظف</p></div>
+<div class="space-y-2 pt-1">
+<label class="block cursor-pointer">
+<div class="rounded-xl border-2 border-brand-purple bg-[#F3E8FF]/60 p-3 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-green-100 text-brand-green flex items-center justify-center font-bold shrink-0">✓</div>
+<div><div class="flex items-center gap-2">
+<span class="text-sm font-bold font-tajawal text-brand-purple">بإذن</span>
+<span class="text-[9px] bg-green-100 text-green-800 font-bold px-1.5 rounded">موصى به</span></div>
+<p class="text-[11px] text-gray-600 mt-0.5">إجازة موافق عليها مسبقاً</p></div></div>
+<div class="w-5 h-5 rounded-full border-2 border-brand-purple flex items-center justify-center bg-brand-purple shrink-0">
+<div class="w-2 h-2 rounded-full bg-white"></div></div></div></label>
+<label class="block cursor-pointer">
+<div class="rounded-xl border border-gray-200 bg-white p-3 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-red-100 text-brand-red flex items-center justify-center font-bold shrink-0">✕</div>
+<div><span class="text-sm font-bold font-tajawal text-gray-800">بدون إذن</span>
+<p class="text-[11px] text-gray-500 mt-0.5">إجازة غير مصرح بها</p></div></div>
+<div class="w-5 h-5 rounded-full border-2 border-gray-300 shrink-0"></div></div></label>
+<label class="block cursor-pointer">
+<div class="rounded-xl border border-gray-200 bg-white p-3 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-amber-100 text-brand-orange flex items-center justify-center font-bold shrink-0">🏖️</div>
+<div><span class="text-sm font-bold font-tajawal text-gray-800">إجازة ممتدة</span>
+<p class="text-[11px] text-gray-500 mt-0.5">إجازة طويلة الأمد</p></div></div>
+<div class="w-5 h-5 rounded-full border-2 border-gray-300 shrink-0"></div></div></label>
+</div></div>
+<div class="bg-white rounded-xl border border-gray-200 p-3">
+<div class="flex items-center justify-between mb-1.5">
+<label class="text-xs font-bold font-tajawal">ملاحظات (اختياري)</label>
+<span class="text-[10px] text-gray-400">تظهر في إشعار الموظف</span></div>
+<textarea rows="2" class="w-full bg-gray-50 border border-gray-200 rounded-lg p-2 text-xs resize-none" placeholder="تم اعتماد الإجازة..."></textarea></div>
+</div>
+<div class="absolute bottom-0 inset-x-0 bg-white border-t border-brand-border p-3 shadow-lg space-y-2">
+<button class="w-full h-11 bg-brand-purple text-white rounded-xl font-bold font-tajawal text-sm shadow-md flex items-center justify-center gap-2">
+✓ موافقة واعتماد الإجازة (بإذن)</button>
+<div class="grid grid-cols-2 gap-2">
+<button class="h-9 border border-brand-red text-brand-red rounded-xl font-bold font-tajawal text-xs flex items-center justify-center">✕ رفض الطلب</button>
+<button class="h-9 border border-brand-orange text-brand-orange rounded-xl font-bold font-tajawal text-xs flex items-center justify-center">🔄 طلب تعديل</button></div></div>
+</div>
+</div>
+<!-- Screen 3: Reject Modal -->
+<div class="flex flex-col items-center">
+<div class="flex items-center gap-2 mb-3 text-xs font-bold font-tajawal text-[#5B2C8D]">
+<span class="w-2.5 h-2.5 rounded-full bg-[#E74C3C]"></span>3. نافذة سبب الرفض</div>
+<div class="phone bg-[#2C3E50]/75" style="justify-content:flex-end">
+<div class="absolute top-0 inset-x-0 h-8 px-6 flex items-center justify-between text-[11px] font-bold text-white/70">
+<span>09:41</span><div class="w-24 h-4 bg-gray-900 rounded-full mx-auto"></div><span>📶 📡 🔋</span></div>
+<div class="absolute top-10 inset-x-3 p-3 bg-white/10 backdrop-blur rounded-2xl border border-white/20 text-white/80 text-xs space-y-2">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-brand-purple text-white text-xs flex items-center justify-center font-bold">م أ</div>
+<div><div class="font-bold">محمد أحمد • TX12345</div>
+<div class="text-[10px] text-white/60">طلب إجازة 3 أيام</div></div></div></div>
+<div class="w-full bg-white rounded-t-[28px] p-4 shadow-2xl z-10 flex flex-col space-y-3.5">
+<div class="w-12 h-1.5 bg-gray-300 rounded-full mx-auto -mt-1"></div>
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-xl bg-red-100 text-brand-red flex items-center justify-center font-bold text-lg">⚠️</div>
+<div><h3 class="text-base font-bold font-tajawal">تحديد سبب الرفض</h3>
+<p class="text-[11px] text-brand-muted">موجه للموظف: <strong>محمد أحمد</strong></p></div></div>
+<button class="w-7 h-7 rounded-full bg-gray-100 text-gray-500 flex items-center justify-center text-xs">✕</button></div>
+<div class="bg-amber-50 border border-amber-200 rounded-xl p-2.5 text-xs text-amber-900">
+<span class="font-bold font-tajawal block mb-0.5">ℹ️ توثيق القرار:</span>
+سيتم إرسال سبب الرفض عبر إشعار فوري.</div>
+<div class="space-y-1.5">
+<span class="text-[11px] font-bold font-tajawal">أسباب شائعة:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] bg-gray-100 border border-gray-200 text-gray-700 px-2 py-1 rounded-lg">ضغط عمل</span>
+<span class="text-[10px] bg-purple-50 text-brand-purple border border-purple-200 font-bold px-2 py-1 rounded-lg">✓ تعارض مع إجازة زميل</span>
+<span class="text-[10px] bg-gray-100 border border-gray-200 text-gray-700 px-2 py-1 rounded-lg">تعديل الموعد</span></div></div>
+<div class="space-y-1">
+<div class="flex items-center justify-between">
+<label class="text-xs font-bold font-tajawal">نص سبب الرفض <span class="text-red-500">*</span></label>
+<span class="text-[10px] text-gray-400">إلزامي</span></div>
+<textarea rows="3" class="w-full bg-gray-50 border border-gray-300 rounded-xl p-2.5 text-xs resize-none" placeholder="اذكر سبب الرفض...">نعتذر عن قبول الطلب في هذه التواريخ لتعارضها مع إجازة الزميلة سارة.</textarea>
+<div class="flex justify-between text-[10px] text-gray-400">
+<span>سيقرأه الموظف</span><span>124/250</span></div></div>
+<div class="bg-gray-50 p-2 rounded-xl border border-gray-200 flex items-center justify-between text-xs">
+<div class="flex items-center gap-2">
+<span class="text-base">🔄</span>
+<div><span class="font-bold text-[11px] block">إتاحة إعادة التقديم</span>
+<span class="text-[9px] text-brand-muted">فتح الطلب للتعديل</span></div></div>
+<div class="w-8 h-4.5 bg-brand-purple rounded-full p-0.5 flex items-center justify-end">
+<div class="w-3.5 h-3.5 rounded-full bg-white"></div></div></div>
+<div class="space-y-2 pt-1">
+<button class="w-full h-11 bg-brand-red text-white rounded-xl font-bold font-tajawal text-sm flex items-center justify-center gap-2">
+🗑️ تأكيد تسجيل الرفض وإشعار الموظف</button>
+<button class="w-full h-9 border border-gray-300 text-gray-700 rounded-xl font-bold font-tajawal text-xs flex items-center justify-center">
+إلغاء والعودة</button></div>
+</div>
+</div>
+</div>
+</div>
+<footer class="mt-10 text-center text-xs text-gray-500 max-w-3xl">
+واجهات أندرويد 360×800 • RTL • استبعاد كلمة «اعتيادية» والالتزام بالأنواع الرسمية الثلاثة</footer>
+</body>
+</html>

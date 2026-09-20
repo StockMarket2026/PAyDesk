@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><title>PayDesk - Reports & Profile</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Tajawal:wght@500;700;800;900&display=swap" rel="stylesheet">
+<script>tailwind.config={theme:{extend:{colors:{brand:{purple:'#5B2C8D',purpleHover:'#4A2374',purpleLight:'#F3E8FF',purpleSoft:'#EDE9FE',orange:'#F39C12',green:'#27AE60',red:'#E74C3C',dark:'#2C3E50',muted:'#6B7280',border:'#E5E7EB',bgLight:'#F8F9FA'}},fontFamily:{tajawal:['Tajawal'],cairo:['Cairo']}}}}</script>
+<style>
+body{font-family:'Cairo',sans-serif;background:#0F172A;padding:20px;color:#2C3E50}
+.font-tajawal{font-family:'Tajawal',sans-serif}
+.mobile-frame{width:360px;height:800px;border-radius:40px;overflow:hidden;box-shadow:0 25px 50px -12px rgba(0,0,0,0.45),0 0 0 10px #1E293B;background:#F8F9FA;position:relative;flex-shrink:0;display:flex;flex-direction:column}
+.notch{width:110px;height:24px;background-color:#1E293B;border-bottom-left-radius:14px;border-bottom-right-radius:14px;position:absolute;top:0;left:50%;transform:translateX(-50%);z-index:50}
+.custom-scroll::-webkit-scrollbar{width:4px}
+.custom-scroll::-webkit-scrollbar-thumb{background:#CBD5E1;border-radius:4px}
+.canvas-bg{background-color:#0d1322;background-image:radial-gradient(#27354f 1px,transparent 1px);background-size:24px 24px}
+</style>
+</head>
+<body class="canvas-bg min-h-screen flex flex-col items-center">
+<header class="text-center mb-10 max-w-4xl">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-950/80 border border-purple-500/30 text-purple-300 text-xs font-semibold mb-3">
+<span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>PayDesk Final Modules</div>
+<h1 class="text-3xl md:text-4xl font-extrabold text-white font-tajawal">مركز التقارير، الإشعارات، والملف الشخصي</h1>
+<p class="text-slate-400 mt-2 text-sm max-w-2xl mx-auto">اكتمال شاشات النظام للمدراء والمحاسبين والـ HR والموظفين</p>
+</header>
+<main class="w-full max-w-7xl flex flex-wrap items-center justify-center gap-8 pb-10">
+<!-- Screen 1: Reports -->
+<div class="flex flex-col items-center">
+<div class="flex items-center gap-2 mb-3 text-slate-300 text-xs font-semibold font-tajawal">
+<span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>1. مركز التقارير</div>
+<div class="mobile-frame">
+<div class="notch"></div>
+<div class="pt-2 px-6 pb-1 flex justify-between items-center text-[10px] font-semibold text-slate-500 bg-white border-b border-slate-100">
+<span>09:41</span><div class="flex items-center gap-1.5">📶 📡 🔋</div></div>
+<div class="px-4 py-3 bg-white flex items-center justify-between border-b border-brand-border">
+<div class="w-8"></div>
+<h2 class="font-tajawal font-bold text-base">التقارير</h2>
+<button class="w-8 h-8 rounded-lg bg-purple-50 text-brand-purple flex items-center justify-center">⬇️</button></div>
+<div class="flex-1 overflow-y-auto px-4 py-3 space-y-4 custom-scroll">
+<div class="grid grid-cols-2 gap-2.5">
+<div class="bg-white p-3 rounded-xl border border-brand-border hover:border-amber-400">
+<div class="w-8 h-8 rounded-lg bg-amber-50 text-brand-orange flex items-center justify-center mb-2">📊</div>
+<h3 class="font-tajawal font-bold text-xs">تقرير الحضور</h3>
+<p class="text-[10px] text-brand-muted mt-0.5">غيابات، أذونات</p></div>
+<div class="bg-white p-3 rounded-xl border border-brand-border hover:border-purple-400">
+<div class="w-8 h-8 rounded-lg bg-purple-50 text-brand-purple flex items-center justify-center mb-2">💰</div>
+<h3 class="font-tajawal font-bold text-xs">تقرير المرتبات</h3>
+<p class="text-[10px] text-brand-muted mt-0.5">إجماليات</p></div>
+<div class="bg-white p-3 rounded-xl border border-brand-border hover:border-emerald-400">
+<div class="w-8 h-8 rounded-lg bg-emerald-50 text-brand-green flex items-center justify-center mb-2">👥</div>
+<h3 class="font-tajawal font-bold text-xs">تقرير الموظفين</h3>
+<p class="text-[10px] text-brand-muted mt-0.5">أعداد وتوزيع</p></div>
+<div class="bg-white p-3 rounded-xl border border-brand-border hover:border-blue-400">
+<div class="w-8 h-8 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center mb-2">📈</div>
+<h3 class="font-tajawal font-bold text-xs">تقرير الأداء</h3>
+<p class="text-[10px] text-brand-muted mt-0.5">أعلى/أقل</p></div></div>
+<div class="bg-white p-3 rounded-xl border border-brand-border space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-tajawal font-bold text-xs">تصفية:</span>
+<button class="text-[10px] font-semibold text-brand-purple bg-purple-50 px-2 py-0.5 rounded-md">أكتوبر 2026 ▼</button></div>
+<div class="flex items-center gap-1.5 overflow-x-auto custom-scroll text-[10px]">
+<span class="px-2.5 py-1 bg-brand-purple text-white rounded-full font-medium whitespace-nowrap">الكل</span>
+<span class="px-2.5 py-1 bg-slate-100 text-slate-600 rounded-full whitespace-nowrap">حضور</span>
+<span class="px-2.5 py-1 bg-slate-100 text-slate-600 rounded-full whitespace-nowrap">مرتبات</span>
+<span class="px-2.5 py-1 bg-slate-100 text-slate-600 rounded-full whitespace-nowrap">موظفين</span>
+<span class="px-2.5 py-1 bg-slate-100 text-slate-600 rounded-full whitespace-nowrap">أداء</span></div></div>
+<div>
+<div class="flex items-center justify-between mb-2">
+<h4 class="font-tajawal font-bold text-xs">آخر التقارير المُصدَّرة:</h4>
+<span class="text-[10px] text-brand-purple font-medium">الأرشيف</span></div>
+<div class="space-y-2">
+<div class="bg-white p-2.5 rounded-xl border border-brand-border flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-rose-50 border border-rose-100 flex items-center justify-center text-rose-600 font-bold text-[10px]">PDF</div>
+<div><h5 class="text-xs font-bold">تقرير الحضور — أكتوبر 2026</h5>
+<p class="text-[10px] text-brand-muted">PDF • 2.4 MB • منذ 3 أيام</p></div></div>
+<button class="w-7 h-7 rounded-lg bg-slate-100 flex items-center justify-center">⬇️</button></div>
+<div class="bg-white p-2.5 rounded-xl border border-brand-border flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-600 font-bold text-[10px]">XLS</div>
+<div><h5 class="text-xs font-bold">تقرير المرتبات — سبتمبر 2026</h5>
+<p class="text-[10px] text-brand-muted">Excel • 890 KB • منذ أسبوع</p></div></div>
+<button class="w-7 h-7 rounded-lg bg-slate-100 flex items-center justify-center">⬇️</button></div>
+<div class="bg-white p-2.5 rounded-xl border border-brand-border flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-lg bg-rose-50 border border-rose-100 flex items-center justify-center text-rose-600 font-bold text-[10px]">PDF</div>
+<div><h5 class="text-xs font-bold">تقرير الموظفين — Q3 2026</h5>
+<p class="text-[10px] text-brand-muted">PDF • 1.2 MB • منذ أسبوعين</p></div></div>
+<button class="w-7 h-7 rounded-lg bg-slate-100 flex items-center justify-center">⬇️</button></div></div></div>
+<div class="bg-purple-50 border border-purple-200 rounded-xl p-3 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="text-lg">✨</span>
+<div><p class="text-[11px] font-bold text-brand-purple">تخصيص تقرير جديد</p>
+<p class="text-[9px] text-slate-600">اختر الفروع والفترة</p></div></div>
+<button class="px-2.5 py-1.5 bg-brand-purple text-white text-[10px] font-bold rounded-lg">إنشاء</button></div>
+</div>
+<div class="bg-white border-t border-brand-border py-2 px-6 flex justify-between items-center text-slate-400">
+<div class="flex flex-col items-center gap-0.5 text-[9px]">🏠<span>الرئيسية</span></div>
+<div class="flex flex-col items-center gap-0.5 text-[9px]">👥<span>الموظفين</span></div>
+<div class="flex flex-col items-center gap-0.5 text-brand-purple font-bold text-[9px]">📊<span>التقارير</span></div>
+<div class="flex flex-col items-center gap-0.5 text-[9px]">👤<span>حسابي</span></div></div>
+</div>
+</div>
+<!-- Screen 2: Notifications -->
+<div class="flex flex-col items-center">
+<div class="flex items-center gap-2 mb-3 text-slate-300 text-xs font-semibold font-tajawal">
+<span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>2. مركز الإشعارات</div>
+<div class="mobile-frame">
+<div class="notch"></div>
+<div class="pt-2 px-6 pb-1 flex justify-between items-center text-[10px] font-semibold text-slate-500 bg-white border-b border-slate-100">
+<span>09:42</span><div class="flex items-center gap-1.5">📶 📡 🔋</div></div>
+<div class="px-4 py-3 bg-white flex items-center justify-between border-b border-brand-border">
+<button class="text-slate-400">‹</button>
+<h2 class="font-tajawal font-bold text-base">الإشعارات</h2>
+<button class="text-[11px] font-semibold text-brand-purple">تحديد الكل كمقروء</button></div>
+<div class="bg-white px-4 py-2 border-b border-brand-border flex items-center gap-2">
+<button class="flex-1 py-1.5 text-center text-xs font-bold rounded-lg bg-brand-purple text-white">الكل (12)</button>
+<button class="flex-1 py-1.5 text-center text-xs font-medium rounded-lg bg-slate-100 text-slate-600">غير مقروءة (3)</button>
+<button class="flex-1 py-1.5 text-center text-xs font-medium rounded-lg bg-slate-100 text-slate-600">المقروءة (9)</button></div>
+<div class="flex-1 overflow-y-auto px-4 py-3 space-y-2.5 custom-scroll">
+<div class="bg-[#F3E8FF] border border-purple-200 p-3 rounded-xl relative flex items-start gap-3">
+<span class="w-2 h-2 rounded-full bg-brand-purple absolute top-3.5 right-2"></span>
+<div class="w-9 h-9 rounded-full bg-purple-100 text-brand-purple flex items-center justify-center shrink-0 mr-1 mt-0.5">💰</div>
+<div class="flex-1 pr-1">
+<div class="flex items-center justify-between">
+<h4 class="font-tajawal font-bold text-xs text-brand-purple">مرتبك متاح للمراجعة</h4>
+<span class="text-[10px] text-brand-muted">منذ 5 د</span></div>
+<p class="text-[11px] text-slate-700 mt-0.5">تم رفع مسير أكتوبر 2026. اضغط للمراجعة والتوقيع.</p></div></div>
+<div class="bg-[#F3E8FF] border border-purple-200 p-3 rounded-xl relative flex items-start gap-3">
+<span class="w-2 h-2 rounded-full bg-brand-purple absolute top-3.5 right-2"></span>
+<div class="w-9 h-9 rounded-full bg-emerald-100 text-brand-green flex items-center justify-center shrink-0 mr-1 mt-0.5">✅</div>
+<div class="flex-1 pr-1">
+<div class="flex items-center justify-between">
+<h4 class="font-tajawal font-bold text-xs">تم قبول طلب إجازتك</h4>
+<span class="text-[10px] text-brand-muted">منذ 40 د</span></div>
+<p class="text-[11px] text-slate-700 mt-0.5">وافق الليدر أحمد على طلب الإجازة العارضة.</p></div></div>
+<div class="bg-[#F3E8FF] border border-purple-200 p-3 rounded-xl relative flex items-start gap-3">
+<span class="w-2 h-2 rounded-full bg-brand-purple absolute top-3.5 right-2"></span>
+<div class="w-9 h-9 rounded-full bg-amber-100 text-brand-orange flex items-center justify-center shrink-0 mr-1 mt-0.5">📅</div>
+<div class="flex-1 pr-1">
+<div class="flex items-center justify-between">
+<h4 class="font-tajawal font-bold text-xs">الليدر سجل غيابك</h4>
+<span class="text-[10px] text-brand-muted">منذ 2 س</span></div>
+<p class="text-[11px] text-slate-700 mt-0.5">تم تسجيلك كـ (غياب بدون إذن) لجلسة اليوم.</p></div></div>
+<div class="flex items-center gap-2 py-1">
+<div class="flex-1 h-px bg-slate-200"></div>
+<span class="text-[10px] text-brand-muted">سابقاً (مقروءة)</span>
+<div class="flex-1 h-px bg-slate-200"></div></div>
+<div class="bg-white border border-brand-border p-3 rounded-xl flex items-start gap-3 opacity-80">
+<div class="w-9 h-9 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center shrink-0 mt-0.5">💳</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<h4 class="font-tajawal font-bold text-xs">تم إرسال مرتبك</h4>
+<span class="text-[10px] text-brand-muted">أمس</span></div>
+<p class="text-[11px] text-brand-muted mt-0.5">أرسلت سارة المحاسبة الكشف الرسمي لفرع علي وسيف.</p></div></div>
+<div class="bg-white border border-brand-border p-3 rounded-xl flex items-start gap-3 opacity-80">
+<div class="w-9 h-9 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center shrink-0 mt-0.5">⚠️</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<h4 class="font-tajawal font-bold text-xs">تم تحديث بياناتك</h4>
+<span class="text-[10px] text-brand-muted">منذ 3 أيام</span></div>
+<p class="text-[11px] text-brand-muted mt-0.5">قامت نورا (HR) بتحديث تعيين الليدر المباشر.</p></div></div>
+</div>
+<div class="bg-white border-t border-brand-border py-2 px-6 flex justify-between items-center text-slate-400">
+<div class="flex flex-col items-center gap-0.5 text-[9px]">🏠<span>الرئيسية</span></div>
+<div class="flex flex-col items-center gap-0.5 text-brand-purple font-bold text-[9px] relative">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-400 absolute -top-0.5"></span>🔔<span>الإشعارات</span></div>
+<div class="flex flex-col items-center gap-0.5 text-[9px]">📊<span>التقارير</span></div>
+<div class="flex flex-col items-center gap-0.5 text-[9px]">👤<span>حسابي</span></div></div>
+</div>
+</div>
+<!-- Screen 3: Profile -->
+<div class="flex flex-col items-center">
+<div class="flex items-center gap-2 mb-3 text-slate-300 text-xs font-semibold font-tajawal">
+<span class="w-2.5 h-2.5 rounded-full bg-purple-400"></span>3. حسابي والإعدادات</div>
+<div class="mobile-frame">
+<div class="notch"></div>
+<div class="pt-2 px-6 pb-1 flex justify-between items-center text-[10px] font-semibold text-white bg-brand-purple">
+<span>09:44</span><div class="flex items-center gap-1.5">📶 📡 🔋</div></div>
+<div class="flex-1 overflow-y-auto custom-scroll pb-4">
+<div class="bg-gradient-to-b from-brand-purple to-brand-purpleHover text-white px-4 pt-3 pb-6 rounded-b-3xl text-center">
+<h2 class="font-tajawal font-bold text-sm mb-3">حسابي</h2>
+<div class="w-20 h-20 mx-auto rounded-full bg-white/15 border-2 border-white/40 flex items-center justify-center font-tajawal font-extrabold text-2xl mb-2.5">م أ</div>
+<h3 class="font-tajawal font-bold text-lg">محمد أحمد منصور</h3>
+<p class="text-white/80 text-xs">Sales Representative</p>
+<div class="flex items-center justify-center gap-2 mt-3">
+<span class="bg-white text-brand-purple px-2.5 py-0.5 rounded-full text-[11px] font-bold">TX12345</span>
+<span class="bg-purple-900/60 text-purple-200 border border-purple-400/30 px-2.5 py-0.5 rounded-full text-[11px]">فرع علي وسيف</span></div></div>
+<div class="px-4 mt-3 space-y-3">
+<div class="bg-white p-3 rounded-xl border border-brand-border space-y-2 text-xs">
+<div class="flex items-center gap-2"><span class="text-slate-400">📱</span><span class="text-brand-muted">الهاتف:</span>
+<span class="font-semibold mr-auto dir-ltr font-mono text-[11px]">+20 1XX XXX 56789</span></div>
+<div class="flex items-center gap-2 border-t border-slate-100 pt-1.5"><span class="text-slate-400">🏢</span><span class="text-brand-muted">الفرع:</span>
+<span class="font-semibold mr-auto">علي وسيف</span></div>
+<div class="flex items-center gap-2 border-t border-slate-100 pt-1.5"><span class="text-slate-400">👔</span><span class="text-brand-muted">الليدر:</span>
+<span class="font-semibold text-brand-purple mr-auto">أحمد سامي</span></div>
+<div class="flex items-center gap-2 border-t border-slate-100 pt-1.5"><span class="text-slate-400">📅</span><span class="text-brand-muted">الانضمام:</span>
+<span class="font-semibold mr-auto">15 يناير 2024</span></div></div>
+<div class="bg-white rounded-xl border border-brand-border p-3">
+<h4 class="font-tajawal font-bold text-xs mb-2">الإعدادات والتفضيلات</h4>
+<div class="space-y-2.5 text-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">🌍<span>اللغة</span></div>
+<div class="flex items-center gap-1 text-[11px] text-brand-purple font-semibold">العربية ‹</div></div>
+<div class="flex items-center justify-between border-t border-slate-100 pt-2">
+<div class="flex items-center gap-2">🔔<span>الإشعارات الفورية</span></div>
+<div class="w-9 h-5 bg-brand-purple rounded-full p-0.5 flex items-center justify-end">
+<div class="w-4 h-4 bg-white rounded-full"></div></div></div>
+<div class="flex items-center justify-between border-t border-slate-100 pt-2">
+<div class="flex items-center gap-2">🌙<span>الوضع الليلي</span></div>
+<div class="w-9 h-5 bg-slate-300 rounded-full p-0.5 flex items-center justify-start">
+<div class="w-4 h-4 bg-white rounded-full"></div></div></div></div></div>
+<div class="bg-white rounded-xl border border-brand-border p-3">
+<h4 class="font-tajawal font-bold text-xs mb-2">الأمان والحماية</h4>
+<div class="space-y-2.5 text-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">🔐<span>تفعيل بصمة الإصبع</span></div>
+<div class="w-9 h-5 bg-brand-purple rounded-full p-0.5 flex items-center justify-end">
+<div class="w-4 h-4 bg-white rounded-full"></div></div></div>
+<div class="flex items-center justify-between border-t border-slate-100 pt-2">
+<div class="flex items-center gap-2">🔑<span>تغيير رمز PIN</span></div>‹</div>
+<div class="flex items-center justify-between border-t border-slate-100 pt-2">
+<div class="flex items-center gap-2">📱<span>الأجهزة الموثوقة</span></div>
+<div class="flex items-center gap-1 text-[11px] text-brand-muted">2 أجهزة ‹</div></div></div></div>
+<div class="text-center py-1 space-y-1.5">
+<div class="flex items-center justify-center gap-1.5">
+<span class="text-[11px] text-slate-400">صُنع بواسطة</span>
+<span class="text-[14px] font-tajawal font-semibold text-brand-purple">K&M Solutions</span></div>
+<div class="w-20 h-px bg-slate-200 mx-auto"></div>
+<p class="text-[11px] text-slate-400">الإصدار 1.0.0</p></div>
+<button class="w-full py-2.5 rounded-xl border border-brand-red text-brand-red font-tajawal font-bold text-xs">🚪 تسجيل الخروج</button>
+</div></div>
+</div>
+</div>
+</main>
+<footer class="mt-4 text-center text-slate-500 text-xs flex flex-wrap items-center justify-center gap-4">
+<div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-[#5B2C8D]"></span>Primary #5B2C8D</div>
+<div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-[#F39C12]"></span>Accent #F39C12</div>
+<div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-[#27AE60]"></span>Success #27AE60</div>
+<div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-[#E74C3C]"></span>Red #E74C3C</div>
+<span>• 360×800 RTL • Tajawal + Cairo</span></footer>
+</body>
+</html>
